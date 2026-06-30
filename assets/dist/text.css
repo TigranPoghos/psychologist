@@ -1,0 +1,91 @@
+:root {
+  --font-family: "Montserrat", sans-serif;
+  --second-family: "Tenor Sans", sans-serif;
+}
+
+h1 {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 125%;
+    letter-spacing: -0.03em;
+    color: #235347;
+    text-shadow: 0 4px 80px 0 rgba(5, 9, 22, 0.08);
+}
+
+h2 {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 125%;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: #235347;
+    text-shadow: 0 4px 80px 0 rgba(5, 9, 22, 0.08);
+}
+
+.title {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -0.03em;
+    color: #235347;
+    text-shadow: 0 4px 80px 0 rgba(5, 9, 22, 0.08);
+}
+
+.subtitle {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    color: #54504d;
+}
+
+.text {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    color: #54504d;
+}
+
+.small {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    color: #54504d;
+}
+
+.center {
+    text-align: center;
+}
+
+.extrabold {
+    font-weight: 700;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.light {
+    font-weight: 400;
+}
+
+.f1 {
+    font-family: var(--font-family);
+}
+
+.f2 {
+    font-family: var(--second-family);
+}
+
+.c1 {
+    color: #235347;
+}
+
+.c2 {
+    color: #54504d;
+}
