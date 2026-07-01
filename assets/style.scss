@@ -268,9 +268,86 @@ body {
 
 .footer {
     flex: 0 0 auto;
+    border-top: 1px solid #235347;
+
+    &__row {
+        flex-direction: column;
+    }
+
+    &__top {
+        display: flex;
+        padding: 60px 0 30px 0;
+    }
+
+    &__left {
+        border-right: 1px solid #235347;
+        flex-direction: column;
+        gap: 13px;
+        padding-right: 20px;
+        max-width: 325px;
+        display: flex;
+        max-height: max-content;
+    }
+
+    &__nav {
+        display: flex;
+        width: 100%;
+    }
+
+    &__menu {
+        padding: 0 23px;
+        border-right: 1px solid #235347;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        &-row {
+            display: flex;
+            gap: 10px;
+        }
+
+        & .text {
+            margin-bottom: 5px;
+        }
+
+        &:last-child {
+            border: 0;
+        }
+    }
+
+    &__middle {
+        display: flex;
+        gap: 50px;
+        padding-bottom: 60px;
+
+        &-item {
+            display: flex;
+            gap: 10px;
+            max-width: 320px;
+        }
+    }
+
+    &__bottom {
+        padding: 23px;
+        display: flex;
+        justify-content: center;
+        border-top: 1px solid #235347;
+    }
 }
 
 .hero {
+    position: relative;
+
+    &__back {
+        background: #fdf2e6;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
     &__row {
         padding: 180px 0 100px 0;
         flex-direction: column;
@@ -916,6 +993,111 @@ body {
             & span {
                 color: #235347;
             }
+        }
+    }
+}
+
+.faq {
+    margin-bottom: 60px;
+
+    &__row {
+        flex-direction: column;
+        gap: 35px;
+
+        & .serbia__top {
+            max-width: 592px;
+            margin: 0 auto;
+        }
+    }
+    
+    &__bottom {
+        background: #222d31;
+        border-radius: 20px;
+        padding: 20px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+
+        & h2 {
+            color: #fcf8f5;
+            text-align: left;
+            max-width: 642px;
+        }
+
+        & p {
+            color: #fcf8f5;
+        }
+    }
+
+    & img {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+@media (max-width: 1440px) {
+    .header {
+        & .header {
+            &__logo {
+                &-text {
+                    display: none;
+                }
+            }
+        }
+
+        & button {
+            & span span {
+                display: none;
+            }
+        }
+
+        &__logo {
+            & img {
+                max-width: 50px;
+            }
+        }
+
+        &__menu {
+            margin-left: 30px;
+
+            & ul {
+                gap: 15px;
+            }
+
+            &-item {
+                &.active {
+                    padding: 7px 14px;
+                }
+            }
+        }
+    }
+
+    .container {
+        padding: 0 60px;
+    }
+
+    .hero {
+        background: none !important;
+
+        &__row {
+            padding: 120px 0 60px 0;
+            gap: 40px;
+        }
+
+        &__content {
+            gap: 15px;
+        }
+
+        &__bottom {
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        &__button {
+            gap: 10px;
         }
     }
 }
