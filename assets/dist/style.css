@@ -67,11 +67,30 @@ button.button span {
   color: white;
   transition: 0.4s;
 }
+button.button svg path {
+  transition: 0.4s;
+}
+button.button:hover {
+  background: white;
+}
+button.button:hover span {
+  color: #235347;
+}
+button.button:hover svg path {
+  fill: #235347;
+  stroke: #235347;
+}
 button.button__white {
   background: white;
 }
 button.button__white span {
   color: #235347;
+}
+button.button__white:hover {
+  background: #235347;
+}
+button.button__white:hover span {
+  color: white;
 }
 
 body {
@@ -243,6 +262,7 @@ body.hidden {
 .footer__menu-row {
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 .footer__menu .text {
   margin-bottom: 5px;
@@ -743,7 +763,11 @@ body.hidden {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  max-width: 280px;
+  position: relative;
+  z-index: 1;
+}
+.grid__status-content .subtitle {
+  max-width: 380px;
 }
 .grid__info {
   display: flex;
@@ -812,7 +836,7 @@ body.hidden {
   padding: 20px 20px 30px 20px;
   background: white;
   display: flex;
-  gap: 10px;
+  gap: 5px;
   position: relative;
 }
 .help__arrow {
@@ -866,6 +890,79 @@ body.hidden {
   position: absolute;
   top: 0;
   right: 0;
+}
+.faq__wrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.faq__item {
+  display: flex;
+  padding: 20px;
+  border-radius: 20px;
+  background: white;
+  width: calc(50% - 10px);
+  flex-direction: column;
+}
+.faq__item .subtitle {
+  text-align: left;
+}
+.faq__item-question {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+}
+.faq__item-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+.faq__item.active .faq__item-answer {
+  max-height: 500px;
+}
+.faq__item-line {
+  background: #235347;
+  height: 60px;
+  width: 1px;
+  margin-right: 20px;
+  margin-left: auto;
+}
+
+.partner {
+  margin-bottom: 60px;
+}
+.partner__row {
+  flex-direction: column;
+  gap: 40px;
+}
+.partner .serbia__top {
+  max-width: 866px;
+  margin: 0 auto;
+}
+.partner__item {
+  padding: 20px 7px 20px 7px;
+  background: #f3f0e9;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 264px;
+}
+.partner__slider-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.partner__button {
+  margin-left: auto;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
 }
 
 @media (max-width: 1440px) {

@@ -104,11 +104,36 @@ button.button {
         transition: .4s;
     }
 
+    & svg path {
+        transition: .4s;
+    }
+
+    &:hover {
+        background: white;
+
+        & span {
+            color: #235347;
+        }
+
+        & svg path {
+            fill: #235347;
+            stroke: #235347;
+        }
+    }
+
     &__white {
         background: white;
 
         & span {
             color: #235347;
+        }
+
+        &:hover {
+            background: #235347;
+
+            & span {
+                color: white;
+            }
         }
     }
 }
@@ -304,6 +329,7 @@ body {
         &-row {
             display: flex;
             gap: 10px;
+            align-items: center;
         }
 
         & .text {
@@ -887,7 +913,12 @@ body {
             display: flex;
             flex-direction: column;
             gap: 10px;
-            max-width: 280px;
+            position: relative;
+            z-index: 1;
+
+            & .subtitle {
+                max-width: 380px;
+            }
         }
     }
 
@@ -969,7 +1000,7 @@ body {
         padding: 20px 20px 30px 20px;
         background: white;
         display: flex;
-        gap: 10px;
+        gap: 5px;
         position: relative;
     }
 
@@ -1036,7 +1067,98 @@ body {
         top: 0;
         right: 0;
     }
+
+    &__wrapper {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        display: flex;
+        padding: 20px;
+        border-radius: 20px;
+        background: white;
+        width: calc(50% - 10px);
+        flex-direction: column;
+
+        & .subtitle {
+            text-align: left;
+        }
+
+        &-question {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            width: 100%;
+        }
+
+        &-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .4s ease;
+        }
+
+        &.active {
+            .faq__item-answer {
+                max-height: 500px;
+            }
+        }
+
+        &-line {
+            background: #235347;
+            height: 60px;
+            width: 1px;
+            margin-right: 20px;
+            margin-left: auto;
+        }
+    }
 }
+
+.partner {
+    margin-bottom: 60px;
+
+    &__row {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    & .serbia__top {
+        max-width: 866px;
+        margin: 0 auto;
+    }
+
+    &__item {
+        padding: 20px 7px 20px 7px;
+        background: #f3f0e9;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        min-height: 264px;
+    }
+
+    &__slider {
+        &-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+        }
+    }
+
+    &__button {
+        margin-left: auto;
+    }
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+
 
 @media (max-width: 1440px) {
     .header {
