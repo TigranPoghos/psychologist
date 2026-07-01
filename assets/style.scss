@@ -336,6 +336,27 @@ body {
             margin-bottom: 5px;
         }
 
+        & .small {
+            position: relative;
+
+            &::after {
+                display: block;
+                position: absolute;
+                left: 0;
+                width: 0;
+                height: 1px;
+                background-color: #235347;
+                content: "";
+                transition: width 0.5s ease-out;
+            }
+
+            &:hover {
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+
         &:last-child {
             border: 0;
         }

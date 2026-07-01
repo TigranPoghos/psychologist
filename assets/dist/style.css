@@ -267,6 +267,22 @@ body.hidden {
 .footer__menu .text {
   margin-bottom: 5px;
 }
+.footer__menu .small {
+  position: relative;
+}
+.footer__menu .small::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #235347;
+  content: "";
+  transition: width 0.5s ease-out;
+}
+.footer__menu .small:hover::after {
+  width: 100%;
+}
 .footer__menu:last-child {
   border: 0;
 }
