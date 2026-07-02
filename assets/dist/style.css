@@ -185,7 +185,6 @@ body.hidden {
 }
 .header__menu {
   margin-left: 60px;
-  margin-right: auto;
 }
 .header__menu ul {
   display: flex;
@@ -226,6 +225,7 @@ body.hidden {
 }
 .header button.button {
   padding: 10px 16px;
+  margin-left: auto;
 }
 
 .footer {
@@ -305,6 +305,7 @@ body.hidden {
 
 .hero {
   position: relative;
+  margin-bottom: 60px;
 }
 .hero__back {
   background: #fdf2e6;
@@ -365,8 +366,7 @@ body.hidden {
 }
 
 .info {
-  padding: 20px 0;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 .info__row {
   background: #faf1ea;
@@ -424,6 +424,11 @@ body.hidden {
   border-radius: 20px;
   width: calc(25% - 10px);
   max-height: 310px;
+}
+.staff__item img {
+  max-width: 110px;
+  border-radius: 20px 0 0 20px;
+  width: 100%;
 }
 .staff__item:nth-child(2) {
   background: #eeeee4;
@@ -562,7 +567,7 @@ body.hidden {
 .admin__bottom-img {
   position: absolute;
   right: 0;
-  top: 0;
+  bottom: 0;
 }
 
 .serbia {
@@ -625,6 +630,7 @@ body.hidden {
   padding: 20px;
   background: #333e40;
   border-radius: 20px;
+  align-items: center;
 }
 .serbia__left-circle {
   background: #5b685a;
@@ -822,7 +828,8 @@ body.hidden {
 .grid__bottom img {
   position: absolute;
   right: 0;
-  top: 0;
+  bottom: 0;
+  z-index: -1;
 }
 .grid__bottom-circle {
   background: #f5e7d6;
@@ -904,8 +911,9 @@ body.hidden {
 }
 .faq img {
   position: absolute;
-  top: 0;
-  right: 0;
+  bottom: -62px;
+  right: -100px;
+  z-index: -1;
 }
 .faq__wrapper {
   display: flex;
@@ -981,6 +989,14 @@ body.hidden {
   height: 100%;
 }
 
+.mob {
+  display: none;
+}
+
+.decs {
+  display: flex;
+}
+
 @media (max-width: 1440px) {
   .header .header__logo-text {
     display: none;
@@ -1019,5 +1035,300 @@ body.hidden {
   }
   .hero__button {
     gap: 10px;
+  }
+  .info__item {
+    padding: 20px;
+  }
+  .staff__bottom {
+    flex-wrap: wrap;
+  }
+  .staff__item {
+    width: calc(50% - 7px);
+    max-height: 250px;
+  }
+  .staff__item img {
+    max-width: 150px;
+  }
+  .safe__wrapper {
+    row-gap: 20px;
+    flex-wrap: wrap;
+  }
+  .safe__item {
+    width: 33.333%;
+  }
+  .safe__item:nth-child(3) {
+    border-right: 0;
+  }
+  .admin__item {
+    width: calc(33.333% - 14px);
+  }
+  .serbia__middle {
+    flex-direction: column;
+  }
+  .serbia__left {
+    width: 100%;
+  }
+  .serbia__right {
+    width: 100%;
+  }
+  .serbia__bottom .text {
+    max-width: 600px;
+  }
+  .grid__bottom .text {
+    max-width: 600px;
+  }
+  .help .grid__bottom .text {
+    max-width: 450px;
+  }
+}
+@media (max-width: 1024px) {
+  .header__menu {
+    display: none;
+  }
+  .info__item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info__item p {
+    text-align: center;
+  }
+  .staff__item img {
+    max-width: 100px;
+  }
+  .admin__wrapper {
+    gap: 10px;
+  }
+  .admin__item {
+    width: calc(50% - 5px);
+  }
+  .serbia__right-top {
+    flex-direction: column;
+  }
+  .serbia__right-top img {
+    object-fit: contain;
+    max-height: 400px;
+  }
+  .serbia__right-content {
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .serbia__right-item {
+    width: calc(50% - 5px);
+  }
+  .grid__wrapper {
+    flex-wrap: wrap;
+  }
+  .grid__item {
+    width: calc(50% - 10px);
+  }
+  .grid__status {
+    flex-direction: column;
+  }
+  .grid__status-item {
+    width: 100%;
+  }
+  .grid__info {
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+  .grid__info-item {
+    width: 50%;
+  }
+  .grid__info-item:nth-child(2) {
+    border: none;
+  }
+  .grid__bottom img {
+    right: -25px;
+  }
+  .grid__bottom .text {
+    max-width: 400px;
+  }
+  .help__wrapper {
+    gap: 10px;
+  }
+  .help__item {
+    width: calc(33.333% - 7px);
+  }
+  .faq__wrapper {
+    gap: 10px;
+  }
+  .faq__item {
+    width: 100%;
+  }
+  .faq img {
+    bottom: -24px;
+    right: -30px;
+    max-width: 200px;
+  }
+  .footer__nav {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  .footer__left {
+    max-width: 210px;
+    text-align: center;
+  }
+  .footer__menu {
+    gap: 10px;
+    width: 50%;
+    padding: 0 20px;
+  }
+  .footer__menu:nth-child(2) {
+    border: none;
+  }
+  .footer .header__logo {
+    flex-direction: column;
+  }
+  .footer__middle {
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+  .hero {
+    margin-bottom: 40px;
+  }
+  .hero__row {
+    padding: 100px 0 40px 0;
+    gap: 20px;
+  }
+  .hero__content {
+    gap: 10px;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 1;
+  }
+  .info {
+    margin-bottom: 40px;
+  }
+  .staff__row {
+    gap: 20px;
+  }
+  .staff__top {
+    gap: 10px;
+  }
+  .staff__bottom {
+    gap: 10px;
+  }
+  .staff__item {
+    width: 100%;
+    max-height: 220px;
+  }
+  .safe {
+    margin-bottom: 40px;
+  }
+  .safe__item {
+    width: 50%;
+  }
+  .safe__item:nth-child(2) {
+    border: none;
+  }
+  .safe__item:nth-child(3) {
+    border-right: 1px solid #e9e9e9;
+  }
+  .safe__item:nth-child(4) {
+    border: none;
+  }
+  .safe__content {
+    padding: 20px;
+  }
+  .serbia {
+    margin-bottom: 40px;
+  }
+  .serbia__right-title {
+    width: 100%;
+    text-align: center;
+  }
+  .serbia__top {
+    gap: 10px;
+  }
+  .serbia__middle {
+    margin: 20px 0;
+  }
+  .serbia__left {
+    padding: 20px 0 0 0;
+    gap: 15px;
+  }
+  .serbia__menu {
+    gap: 10px;
+    min-height: 240px;
+    padding: 0 20px;
+  }
+  .serbia__right {
+    gap: 10px;
+  }
+  .grid {
+    margin-bottom: 40px;
+  }
+  .grid__wrapper {
+    margin-top: 0;
+    gap: 10px;
+  }
+  .grid__item {
+    width: 100%;
+    flex-direction: row;
+  }
+  .grid__item .subtitle {
+    margin-left: auto;
+    text-align: end;
+  }
+  .grid__circle {
+    width: 60px;
+    height: 60px;
+  }
+  .grid__circle svg {
+    max-width: 30px;
+  }
+  .grid__status-item .grid__number {
+    font-size: 30px;
+  }
+  .grid__number {
+    font-size: 40px;
+  }
+  .grid__line {
+    display: none;
+  }
+  .grid__bottom .text {
+    max-width: 340px;
+  }
+  .help {
+    margin-bottom: 40px;
+  }
+  .help__wrapper {
+    margin-top: 0;
+  }
+  .help__item {
+    padding: 10px 10px 30px 10px;
+    flex-direction: column;
+  }
+  .help__content {
+    max-width: calc(100% - 80px);
+    margin-right: 0;
+  }
+  .help__bottom {
+    flex-wrap: wrap;
+  }
+  .faq {
+    margin-bottom: 40px;
+  }
+  .faq .hero__button {
+    flex-direction: column-reverse;
+    align-items: start;
+  }
+  .partner {
+    margin-bottom: 40px;
+  }
+  .partner__row {
+    gap: 20px;
+  }
+  .decs {
+    display: none;
+  }
+  .mob {
+    display: flex;
   }
 }

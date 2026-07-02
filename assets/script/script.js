@@ -24,9 +24,21 @@ document.addEventListener("DOMContentLoaded", function(){
     if (slider) {
         const slidesCount = slider.querySelectorAll('.swiper-slide').length;
 
+        let maxSlides;
+
+        if (window.innerWidth <= 768) {
+            maxSlides = 3;
+        } else if (window.innerWidth <= 1024) {
+            maxSlides = 4;
+        } else if (window.innerWidth <= 1440) {
+            maxSlides = 5;
+        } else {
+            maxSlides = 6;
+        }
+
         const slidesPerView =
-            slidesCount >= 6
-                ? 6
+            slidesCount >= maxSlides
+                ? maxSlides
                 : Math.max(3, slidesCount);
 
         new Swiper('.mySwiper', {

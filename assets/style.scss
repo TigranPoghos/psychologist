@@ -238,7 +238,6 @@ body {
 
     &__menu {
         margin-left: 60px;
-        margin-right: auto;
 
         & ul {
             display: flex;
@@ -288,6 +287,7 @@ body {
 
     & button.button {
         padding: 10px 16px;
+        margin-left: auto;
     }
 }
 
@@ -384,6 +384,7 @@ body {
 
 .hero {
     position: relative;
+    margin-bottom: 60px;
 
     &__back {
         background: #fdf2e6;
@@ -452,8 +453,7 @@ body {
 }
 
 .info {
-    padding: 20px 0;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 
     &__row {
         background: #faf1ea;
@@ -519,6 +519,12 @@ body {
         border-radius: 20px;
         width: calc(25% - 10px);
         max-height: 310px;
+
+        & img {
+            max-width: 110px;
+            border-radius: 20px 0 0 20px;
+            width: 100%;
+        }
 
         &:nth-child(2) {
             background: #eeeee4;
@@ -679,7 +685,7 @@ body {
         &-img {
             position: absolute;
             right: 0;
-            top: 0;
+            bottom: 0;
         }
     }
 }
@@ -752,6 +758,7 @@ body {
             padding: 20px;
             background: #333e40;
             border-radius: 20px;
+            align-items: center;
         }
 
         &-circle {
@@ -985,7 +992,8 @@ body {
         & img {
             position: absolute;
             right: 0;
-            top: 0;
+            bottom: 0;
+            z-index: -1;
         }
 
         &-circle {
@@ -1085,8 +1093,9 @@ body {
 
     & img {
         position: absolute;
-        top: 0;
-        right: 0;
+        bottom: -62px;
+        right: -100px;
+        z-index: -1;
     }
 
     &__wrapper {
@@ -1179,6 +1188,14 @@ body {
     height: 100%;
 }
 
+.mob {
+    display: none;
+}
+
+.decs {
+    display: flex;
+}
+
 
 
 @media (max-width: 1440px) {
@@ -1242,5 +1259,448 @@ body {
         &__button {
             gap: 10px;
         }
+    }
+
+    .info {
+        &__item {
+            padding: 20px;
+        }
+    }
+
+    .staff {
+        &__bottom {
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            width: calc(50% - 7px);
+            max-height: 250px;
+
+            & img {
+                max-width: 150px;
+            }
+        }
+    }
+
+    .safe {
+        &__wrapper {
+            row-gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            width: 33.333%;
+
+            &:nth-child(3) {
+                border-right: 0;
+            }
+        }
+    }
+
+    .admin {
+        &__item {
+            width: calc(33.333% - 14px);
+        }
+    }
+
+    .serbia {
+        &__middle {
+            flex-direction: column;
+        }
+
+        &__left {
+            width: 100%;
+        }
+
+        &__right {
+            width: 100%;
+        }
+
+        &__bottom {
+            & .text {
+                max-width: 600px;
+            }
+        }
+    }
+
+    .grid {
+        &__bottom {
+            & .text {
+                max-width: 600px;
+            }
+        }
+    }
+
+    .help {
+        & .grid {
+            &__bottom {
+                & .text {
+                    max-width: 450px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .header {
+        &__menu {
+            display: none;
+        }
+    }
+
+    .info {
+        &__item {
+            flex-direction: column;
+            align-items: center;
+
+            & p {
+                text-align: center;
+            }
+        }
+    }
+
+    .staff {
+        &__item {
+            & img {
+                max-width: 100px;
+            }
+        }
+    }
+
+    .admin {
+        &__wrapper {
+            gap: 10px;
+        }
+
+        &__item {
+            width: calc(50% - 5px);
+        }
+    }
+
+    .serbia {
+        &__right {
+            &-top {
+                flex-direction: column;
+
+                & img {
+                    object-fit: contain;
+                    max-height: 400px;
+                }
+            }
+
+            &-content {
+                gap: 10px;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            &-item {
+                width: calc(50% - 5px);
+            }
+        }
+    }
+
+    .grid {
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            width: calc(50% - 10px);
+        }
+
+        &__status {
+            flex-direction: column;
+
+            &-item {
+                width: 100%;
+            }
+        }
+
+        &__info {
+            flex-wrap: wrap;
+            row-gap: 20px;
+            
+            &-item {
+                width: 50%;
+
+                &:nth-child(2) {
+                    border: none;
+                }
+            }
+        }
+
+        &__bottom {
+            & img {
+                right: -25px;
+            }
+
+            & .text {
+                max-width: 400px;
+            }
+        }
+    }
+    
+    .help {
+        &__wrapper {
+            gap: 10px;
+        }
+
+        &__item {
+            width: calc(33.333% - 7px);
+        }
+    }
+
+    .faq {
+        &__wrapper {
+            gap: 10px;
+        }
+
+        &__item {
+            width: 100%;
+        }
+
+        & img {
+            bottom: -24px;
+            right: -30px;
+            max-width: 200px;
+        }
+    }
+
+    .footer {
+        &__nav {
+            flex-wrap: wrap;
+            row-gap: 30px;
+        }
+
+        &__left {
+            max-width: 210px;
+            text-align: center;
+        }
+
+        &__menu {
+            gap: 10px;
+            width: 50%;
+            padding: 0 20px;
+
+            &:nth-child(2) {
+                border: none;
+            }
+        }
+
+        & .header {
+            &__logo {
+                flex-direction: column;
+            }
+        }
+
+        &__middle {
+            padding-bottom: 40px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .hero {
+        margin-bottom: 40px;
+
+        &__row {
+            padding: 100px 0 40px 0;
+            gap: 20px;
+        }
+
+        &__content {
+            gap: 10px;
+        }
+    }
+
+    h1 {
+        font-size: 40px;
+        line-height: 1;
+    }
+
+    .info {
+        margin-bottom: 40px;
+    }
+
+    .staff {
+        &__row {
+            gap: 20px;
+        }
+
+        &__top {
+            gap: 10px;
+        }
+
+        &__bottom {
+            gap: 10px;
+        }
+
+        &__item {
+            width: 100%;
+            max-height: 220px;
+        }
+    }
+
+    .safe {
+        margin-bottom: 40px;
+
+        &__item {
+            width: 50%;
+
+            &:nth-child(2) {
+                border: none;
+            } 
+
+            &:nth-child(3) {
+                border-right: 1px solid #e9e9e9;
+            }
+            
+            &:nth-child(4) {
+                border: none;
+            } 
+        }
+
+        &__content {
+            padding: 20px;
+        }
+    }
+
+    .serbia {
+        margin-bottom: 40px;
+
+        &__right {
+            &-title {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        &__top {
+            gap: 10px;
+        }
+
+        &__middle {
+            margin: 20px 0;
+        }
+
+        &__left {
+            padding: 20px 0 0 0;
+            gap: 15px;
+        }
+
+        &__menu {
+            gap: 10px;
+            min-height: 240px;
+            padding: 0 20px;
+        }
+
+        &__right {
+            gap: 10px;
+        }
+    }
+
+    .grid {
+        margin-bottom: 40px;
+
+        &__wrapper {
+            margin-top: 0;
+            gap: 10px;
+        }
+
+        &__item {
+            width: 100%;
+            flex-direction: row;
+
+            & .subtitle {
+                margin-left: auto;
+                text-align: end;
+            }
+        }
+
+        &__circle {
+            width: 60px;
+            height: 60px;
+
+            & svg {
+                max-width: 30px;
+            }
+        }
+
+        &__status {
+            &-item {
+                & .grid__number {
+                    font-size: 30px;
+                }
+            }
+        }
+
+        &__number {
+            font-size: 40px;
+        }
+
+        &__line {
+            display: none;
+        }
+
+        &__bottom {
+            & .text {
+                max-width: 340px;
+            }
+        }
+    }
+
+    .help {
+        margin-bottom: 40px;
+
+        &__wrapper {
+            margin-top: 0;
+        }
+
+        &__item {
+            padding: 10px 10px 30px 10px;
+            flex-direction: column;
+        }
+
+        &__content {
+            max-width: calc(100% - 80px);
+            margin-right: 0;
+        }
+
+        &__bottom {
+            flex-wrap: wrap;
+        }
+    }
+
+    .faq {
+        margin-bottom: 40px;
+
+        & .hero {
+            &__button {
+                flex-direction: column-reverse;
+                align-items: start;
+            }
+        }
+    }
+
+    .partner {
+        margin-bottom: 40px;
+        
+        &__row {
+            gap: 20px;
+        }
+    }
+
+    .decs {
+        display: none;
+    }
+
+    .mob {
+        display: flex;
     }
 }

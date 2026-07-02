@@ -89,3 +89,15 @@ h2 {
 .c2 {
     color: #54504d;
 }
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+        line-height: 1;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+}
+    
