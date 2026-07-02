@@ -1325,10 +1325,102 @@ body.hidden {
   .partner__row {
     gap: 20px;
   }
+  .admin__item h4, .admin__item p {
+    max-width: 100px;
+  }
   .decs {
     display: none;
   }
   .mob {
     display: flex;
+  }
+}
+@media (max-width: 576px) {
+  .hero__button {
+    flex-direction: column;
+  }
+  .hero__button button {
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+  }
+  .hero__subtitle {
+    font-size: 18px;
+  }
+  .container {
+    padding: 0 10px;
+  }
+  .info__row {
+    flex-wrap: wrap;
+  }
+  .info__item {
+    width: 100%;
+    border: none;
+  }
+  .staff__item {
+    max-height: 250px;
+  }
+  .safe__item {
+    width: 100%;
+    border: none;
+  }
+  .safe__item:nth-child(3) {
+    border: none;
+  }
+  .admin__row {
+    gap: 20px;
+  }
+  .serbia__right-item {
+    width: 100%;
+  }
+  .serbia__bottom {
+    padding: 10px 10px 60px 10px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .grid__item .subtitle {
+    font-size: 14px;
+  }
+  .grid__number {
+    font-size: 26px;
+  }
+  .grid__circle {
+    width: 40px;
+    height: 40px;
+  }
+  .grid__circle svg {
+    max-width: 20px;
+  }
+  .grid__status-item {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .grid__status-item .grid__number {
+    font-size: 24px;
+  }
+  .grid__info-item {
+    width: 100%;
+    border: none;
+  }
+  .grid__bottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .help__item {
+    width: calc(50% - 5px);
+  }
+  .help__content {
+    max-width: 100%;
+  }
+  .help__bottom button {
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+  }
+  .faq__circle {
+    display: none;
+  }
+  .faq__item-question {
+    gap: 10px;
   }
 }
