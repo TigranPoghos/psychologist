@@ -49,6 +49,14 @@ html {
   scrollbar-width: thin;
 }
 
+::placeholder {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  color: #235347;
+  opacity: 0.5;
+}
+
 button.button {
   border: 1px solid #235347;
   border-radius: 60px;
@@ -1292,10 +1300,12 @@ body.hidden {
 .filter__block-img {
   position: relative;
   display: flex;
+  border-radius: 20px;
 }
 .filter__block-img img {
   border-radius: 20px;
   flex-shrink: 0;
+  max-width: 230px;
 }
 .filter__block-img-text {
   padding: 4px 20px;
@@ -1332,6 +1342,174 @@ body.hidden {
   background: #fcf8f5;
   padding: 5px 10px;
   border-radius: 20px;
+}
+
+.card {
+  margin-bottom: 60px;
+}
+.card__row {
+  flex-direction: column;
+  padding-top: 160px;
+  gap: 60px;
+}
+.card__back {
+  border: 1px solid #235347;
+  border-radius: 60px;
+  padding: 14px 28px;
+  background: #fcf8f5;
+  max-width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.card__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: start;
+}
+.card__right {
+  max-width: 307px;
+  width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: sticky;
+  top: 120px;
+}
+.card__subtitle {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #235347;
+  text-shadow: 0 4px 80px 0 rgba(5, 9, 22, 0.08);
+}
+.card__form {
+  box-shadow: 0 1px 3px 0 rgba(62, 104, 94, 0.15), 0 5px 5px 0 rgba(62, 104, 94, 0.13), 0 10px 6px 0 rgba(62, 104, 94, 0.08), 0 19px 7px 0 rgba(62, 104, 94, 0.02), 0 29px 8px 0 rgba(62, 104, 94, 0);
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.card__form-tabs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.card__form-tabs-item {
+  background: #fdf2e6;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+.card__form-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.card__form-inputs input {
+  padding: 15px;
+  border-radius: 60px;
+  width: 100%;
+  border: 1px solid rgba(35, 83, 71, 0.5);
+}
+.card__form-inputs input:focus {
+  outline: 0;
+}
+.card__form-inputs textarea {
+  padding: 10px 15px;
+  border-radius: 20px;
+  width: 100%;
+  border: 1px solid rgba(35, 83, 71, 0.5);
+  min-height: 135px;
+}
+.card__form-inputs textarea:focus {
+  outline: 0;
+}
+.card__form button.button {
+  max-width: 100%;
+  width: 100%;
+  justify-content: center;
+}
+.card__form-text {
+  opacity: 0.5;
+}
+.card__contacts {
+  box-shadow: 0 1px 3px 0 rgba(62, 104, 94, 0.15), 0 5px 5px 0 rgba(62, 104, 94, 0.13), 0 10px 6px 0 rgba(62, 104, 94, 0.08), 0 19px 7px 0 rgba(62, 104, 94, 0.02), 0 29px 8px 0 rgba(62, 104, 94, 0);
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+.card__left {
+  box-shadow: 0 1px 3px 0 rgba(62, 104, 94, 0.15), 0 5px 5px 0 rgba(62, 104, 94, 0.13), 0 10px 6px 0 rgba(62, 104, 94, 0.08), 0 19px 7px 0 rgba(62, 104, 94, 0.02), 0 29px 8px 0 rgba(62, 104, 94, 0);
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+.card__top {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+.card__top img {
+  max-width: 331px;
+  border-radius: 10px;
+}
+.card__top-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.card__top-content.subtitle {
+  min-height: 72px;
+}
+.card__tabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.card__tabs.orange .card__tabs-item {
+  background: #fdf2e6;
+}
+.card__tabs.green .card__tabs-item {
+  background: #e7f0e6;
+}
+.card__tabs-item {
+  padding: 10px 20px;
+  border-radius: 20px;
+  max-width: max-content;
+}
+.card__block {
+  padding: 20px 0;
+  display: flex;
+  gap: 20px;
+  border-top: 1px solid #235347;
+}
+.card__block-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.card__block-circle {
+  width: 48px;
+  height: 48px;
+  background: #fcf8f5;
+}
+.card__block-item {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 10px);
+  gap: 20px;
+}
+.card__block-line {
+  background: #235347;
+  width: 100%;
+  height: 1px;
 }
 
 .mob {
