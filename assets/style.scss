@@ -1363,6 +1363,8 @@ body {
         flex-direction: column;
         gap: 40px;
         width: calc(23.8% - 10px);
+        min-width: 250px;
+        flex-shrink: 0;
     
         &-top {
             box-shadow: 0 1px 3px 0 rgba(62, 104, 94, 0.15), 0 5px 5px 0 rgba(62, 104, 94, 0.13), 0 10px 6px 0 rgba(62, 104, 94, 0.08), 0 19px 7px 0 rgba(62, 104, 94, 0.02), 0 29px 8px 0 rgba(62, 104, 94, 0);
@@ -1415,6 +1417,7 @@ body {
 
         &-title.small {
             color: #42aa90;
+            margin-bottom: 10px;
         }
 
         &-button.button {
@@ -1497,11 +1500,18 @@ body {
         margin-bottom: 20px;
         animation: fadeUp .35s ease;
 
+        &-content {
+            display: flex;
+            flex-direction: column;
+        }
+
         &-img {
             position: relative;
+            display: flex;
 
             & img {
                 border-radius: 20px;
+                flex-shrink: 0;
             }
 
             &-text {
@@ -1550,11 +1560,11 @@ body {
 }
 
 .mob {
-    display: none;
+    display: none !important;
 }
 
 .decs {
-    display: flex;
+    display: flex !important;
 }
 
 
@@ -1569,23 +1579,21 @@ body {
             }
         }
 
-        & button {
-            & span span {
-                display: none;
-            }
-        }
-
         &__logo {
             & img {
                 max-width: 50px;
             }
         }
 
+        &.button {
+            padding: 8px 12px;
+        }
+
         &__menu {
             margin-left: 30px;
 
             & ul {
-                gap: 15px;
+                gap: 10px;
             }
 
             &-item {
@@ -1698,6 +1706,24 @@ body {
                 & .text {
                     max-width: 450px;
                 }
+            }
+        }
+    }
+
+    .catalog {
+        &__row {
+            padding: 100px 0 0 0;
+            gap: 40px;
+            flex-direction: column;
+        }
+
+        &__right {
+            gap: 40px;
+            flex-direction: row;
+            max-width: 100%;
+
+            &-line {
+                display: none;
             }
         }
     }
@@ -1865,11 +1891,13 @@ body {
         position: absolute;
         right: 0;
         top: 100%;
-        width: 230px;
+        width: 265px;
         padding: 20px;
         background: #fdf2e6;
         border-radius: 0 0 0 20px;
         display: none;
+        flex-direction: column;
+        gap: 20px;
 
         &__button {
             display: flex;
@@ -1890,6 +1918,36 @@ body {
             & ul {
                 flex-direction: column;
                 align-items: start; 
+            }
+        }
+    }
+
+    .catalog {
+        &__left {
+            & .subtitle {
+                max-width: 350px;
+            }
+        }
+    }
+
+    .filter {
+        &__block {
+            flex-direction: column;
+
+            & .filter__title {
+                flex-direction: column;
+                gap: 5px;
+                align-items: start;
+            }
+
+            &-spec.small {
+                margin: 10px 0 15px 0;
+            }
+
+            &-tab {
+                flex-wrap: wrap;
+                align-items: start;
+                gap: 5px;
             }
         }
     }
@@ -2103,16 +2161,73 @@ body {
 
     .burger {
         &__button {
-            margin-left: 10px;
+            margin-left: auto;
+        }
+    }
+
+    .catalog {
+        margin-bottom: 40px;
+        
+        &__left {
+            max-width: 370px;
+        }
+
+        &__back {
+            max-width: 250px;
+        }
+
+        &__right {
+            flex-direction: column;
+            gap: 20px;
+
+            &-line {
+                display: block;
+            }
+        }
+    }
+
+    .filter {
+        &__row {
+            flex-direction: column;
+        }
+
+        &__left {
+            gap: 20px;
+            width: 100%;
+
+            &-top {
+                gap: 10px;
+            }
+        }
+
+        &__button.button {
+            margin-top: 10px;
+        }
+
+        &__right {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            width: 100%;
+
+            &-title.small {
+                width: 100%;
+                margin-bottom: 0;
+            }
+        }
+
+        &__block {
+            width: calc(50% - 5px);
+            margin-bottom: 0;
         }
     }
 
     .decs {
-        display: none;
+        display: none !important;
     }
 
     .mob {
-        display: flex;
+        display: flex !important;
     }
 }
 
@@ -2314,6 +2429,28 @@ body {
 
         &__bottom {
             padding: 10px;
+        }
+    }
+
+    .catalog {
+        &__row {
+            padding: 350px 0 0 0;
+            gap: 20px;
+        }
+
+        &__left {
+            max-width: 100%;
+        }
+
+        &__back {
+            max-width: 400px;
+            width: 100%;
+        }
+    }
+
+    .filter {
+        &__block {
+            width: 100%;
         }
     }
 }

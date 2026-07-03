@@ -213,7 +213,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     const filterBlocks = document.querySelectorAll('.filter__block');
     const showMoreButton = document.querySelector('.filter__right-button');
-    const visibleCount = 4;
+    const visibleCount = window.innerWidth <= 1024 ? 2 : 4;
     if (filterBlocks.length <= visibleCount) {
         showMoreButton.style.display = 'none';
     } else {
