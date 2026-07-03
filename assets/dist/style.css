@@ -1191,6 +1191,18 @@ body.hidden {
   border-radius: 20px;
   padding: 4px 20px;
 }
+.filter__title-item.green {
+  background: #24b954;
+}
+.filter__title-item.red {
+  background: #e91616;
+}
+.filter__title-item.orange {
+  background: #ffa10a;
+}
+.filter__title-item.blue {
+  background: #2f41ff;
+}
 .filter__title-item span {
   font-family: var(--second-family);
   font-weight: 400;

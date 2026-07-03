@@ -1402,6 +1402,22 @@ body {
             border-radius: 20px;
             padding: 4px 20px;
 
+            &.green {
+                background: #24b954;
+            }
+
+            &.red {
+                background: #e91616;
+            }
+
+            &.orange {
+                background: #ffa10a;
+            }
+
+            &.blue {
+                background: #2f41ff;
+            }
+
             & span {
                 font-family: var(--second-family);
                 font-weight: 400;
