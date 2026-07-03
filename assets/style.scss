@@ -185,6 +185,22 @@ body {
     }
 }
 
+.header__opacite {
+    background: rgba(0, 0, 0, .5);
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(3px);
+
+    &.active {
+        display: block;
+    }
+}
+
 .main {
     flex: 1 0 auto;  
     display: flex;
@@ -193,12 +209,16 @@ body {
 
 .header {
     flex: 0 0 auto;
-    background: linear-gradient(180deg, #f5e7d6 0%, rgba(245, 231, 214, 0.57) 64.42%, rgba(245, 231, 214, 0) 100%);
+    background: #fdf2e6;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 10000;
+
+    &.active {
+        background: #fdf2e6;
+    }
 
     &__row {
         align-items: center;    
@@ -988,6 +1008,7 @@ body {
         gap: 20px;
         align-items: center;
         position: relative;
+        overflow: hidden;
 
         & img {
             position: absolute;
@@ -1186,6 +1207,77 @@ body {
 .swiper {
     width: 100%;
     height: 100%;
+}
+
+.burger {
+    display: none;
+
+    &__button {
+        display: none;
+    }
+}
+
+#nav-icon1 {
+    width: 54px;
+    height: 54px;
+    border-radius: 100%;
+    background: #235347;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+#nav-icon1 span{
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background: #fff;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+#nav-icon1 span:nth-child(1) {
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#nav-icon1 span:nth-child(2) {
+    top: 27px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#nav-icon1 span:nth-child(3) {
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#nav-icon1.open span:nth-child(1) {
+    top: 26px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+#nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+#nav-icon1.open span:nth-child(3) {
+    top: 26px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-45deg);
 }
 
 .mob {
@@ -1499,6 +1591,39 @@ body {
             padding-bottom: 40px;
         }
     }
+
+    .burger {
+        position: absolute;
+        right: 0;
+        top: 100%;
+        width: 230px;
+        padding: 20px;
+        background: #fdf2e6;
+        border-radius: 0 0 0 20px;
+        display: none;
+
+        &__button {
+            display: flex;
+        }
+        
+        &.active {
+            display: flex;
+        }
+
+        &__button {
+            margin-left: 20px;
+        }
+
+        & .header__menu {
+            display: flex;
+            margin-left: 0;
+            
+            & ul {
+                flex-direction: column;
+                align-items: start; 
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -1700,6 +1825,19 @@ body {
         max-width: 100px;
     }
 
+    .admin {
+        &__wrapper {
+            flex-wrap: nowrap;
+            gap: 0;
+        }
+    }
+
+    .burger {
+        &__button {
+            margin-left: 10px;
+        }
+    }
+
     .decs {
         display: none;
     }
@@ -1761,6 +1899,10 @@ body {
     .admin {
         &__row {
             gap: 20px;
+        }
+
+        &__item {
+            width: 280px !important;
         }
     }
 
@@ -1849,6 +1991,60 @@ body {
             &-question {
                 gap: 10px;
             }
+        }
+
+        & img {
+            display: none;
+        }
+    }
+
+    .footer {
+        &__top {
+            padding: 20px 0 20px 0;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &__left {
+            max-width: 100%;
+            text-align: left;
+            align-items: start;
+            border: none;
+            padding: 0;
+
+            & .header {
+                &__logo {
+                    flex-direction: row;
+                }
+            }
+        }
+
+        &__nav {
+            flex-wrap: nowrap;
+            flex-direction: column;
+            row-gap: 0;
+        }
+
+        &__menu {
+            gap: 10px;
+            width: 100%;
+            border-bottom: 1px solid #235347;
+            padding: 10px 0;
+            border-right: 0;
+
+            &:nth-child(2) {
+                border-bottom: 1px solid #235347;
+            }
+        }
+
+        &__middle {
+            padding-bottom: 20px;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &__bottom {
+            padding: 10px;
         }
     }
 }

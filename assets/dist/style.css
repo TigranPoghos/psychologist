@@ -138,6 +138,21 @@ body.hidden {
   display: block;
 }
 
+.header__opacite {
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  backdrop-filter: blur(3px);
+}
+.header__opacite.active {
+  display: block;
+}
+
 .main {
   flex: 1 0 auto;
   display: flex;
@@ -146,12 +161,15 @@ body.hidden {
 
 .header {
   flex: 0 0 auto;
-  background: linear-gradient(180deg, #f5e7d6 0%, rgba(245, 231, 214, 0.57) 64.42%, rgba(245, 231, 214, 0) 100%);
+  background: #fdf2e6;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 10000;
+}
+.header.active {
+  background: #fdf2e6;
 }
 .header__row {
   align-items: center;
@@ -824,6 +842,7 @@ body.hidden {
   gap: 20px;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 .grid__bottom img {
   position: absolute;
@@ -987,6 +1006,83 @@ body.hidden {
 .swiper {
   width: 100%;
   height: 100%;
+}
+
+.burger {
+  display: none;
+}
+.burger__button {
+  display: none;
+}
+
+#nav-icon1 {
+  width: 54px;
+  height: 54px;
+  border-radius: 100%;
+  background: #235347;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon1 span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  background: #fff;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#nav-icon1 span:nth-child(2) {
+  top: 27px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#nav-icon1 span:nth-child(3) {
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#nav-icon1.open span:nth-child(1) {
+  top: 26px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+  top: 26px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-45deg);
 }
 
 .mob {
@@ -1183,6 +1279,33 @@ body.hidden {
   .footer__middle {
     padding-bottom: 40px;
   }
+  .burger {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 230px;
+    padding: 20px;
+    background: #fdf2e6;
+    border-radius: 0 0 0 20px;
+    display: none;
+  }
+  .burger__button {
+    display: flex;
+  }
+  .burger.active {
+    display: flex;
+  }
+  .burger__button {
+    margin-left: 20px;
+  }
+  .burger .header__menu {
+    display: flex;
+    margin-left: 0;
+  }
+  .burger .header__menu ul {
+    flex-direction: column;
+    align-items: start;
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -1328,6 +1451,13 @@ body.hidden {
   .admin__item h4, .admin__item p {
     max-width: 100px;
   }
+  .admin__wrapper {
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+  .burger__button {
+    margin-left: 10px;
+  }
   .decs {
     display: none;
   }
@@ -1369,6 +1499,9 @@ body.hidden {
   }
   .admin__row {
     gap: 20px;
+  }
+  .admin__item {
+    width: 280px !important;
   }
   .serbia__right-item {
     width: 100%;
@@ -1422,5 +1555,46 @@ body.hidden {
   }
   .faq__item-question {
     gap: 10px;
+  }
+  .faq img {
+    display: none;
+  }
+  .footer__top {
+    padding: 20px 0 20px 0;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer__left {
+    max-width: 100%;
+    text-align: left;
+    align-items: start;
+    border: none;
+    padding: 0;
+  }
+  .footer__left .header__logo {
+    flex-direction: row;
+  }
+  .footer__nav {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    row-gap: 0;
+  }
+  .footer__menu {
+    gap: 10px;
+    width: 100%;
+    border-bottom: 1px solid #235347;
+    padding: 10px 0;
+    border-right: 0;
+  }
+  .footer__menu:nth-child(2) {
+    border-bottom: 1px solid #235347;
+  }
+  .footer__middle {
+    padding-bottom: 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer__bottom {
+    padding: 10px;
   }
 }
