@@ -10,8 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tenor+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/dist/style.css">
     <link rel="stylesheet" href="assets/dist/text.css">
-    <link rel="stylesheet" href="assets/dist/events.css">
-    <link rel="stylesheet" href="assets/dist/pages.css">
 </head>
 <body>
     <header class="header">
@@ -25,75 +23,243 @@
                     </div>
                 </a>
                 <nav class="header__menu">
-                    <ul><li><a href="index.html" class="header__menu-item">Главная</a></li><li><a href="catalog.html" class="header__menu-item">Психологи</a></li><li><a href="about.html" class="header__menu-item">О сообществе</a></li><li><a href="events.html" class="header__menu-item">Мероприятия</a></li><li><a href="contact.html" class="header__menu-item active">Контакты</a></li></ul>
+                    <ul>
+                        <li><a href="index.html" class="header__menu-item">Главная</a></li>
+                        <li><a href="catalog.html" class="header__menu-item">Психологи</a></li>
+                        <li><a href="about.html" class="header__menu-item">О сообществе</a></li>
+                        <li><a href="events.html" class="header__menu-item">Мероприятия</a></li>
+                        <li><a href="contact.html" class="header__menu-item active">Контакты</a></li>
+                    </ul>
                 </nav>
-                <button class="button"><span>Подобрать психолога</span></button>
+                <button class="button decs"><span>Подобрать психолога</span></span></button>
                 <div class="burger__button">
-                    <div id="nav-icon1"><span></span><span></span><span></span></div>
+                    <div id="nav-icon1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
                 <div class="burger">
-                    <nav class="header__menu"><ul><li><a href="index.html" class="header__menu-item">Главная</a></li><li><a href="catalog.html" class="header__menu-item">Психологи</a></li><li><a href="about.html" class="header__menu-item">О сообществе</a></li><li><a href="events.html" class="header__menu-item">Мероприятия</a></li><li><a href="contact.html" class="header__menu-item active">Контакты</a></li></ul></nav>
+                    <nav class="header__menu">
+                        <ul>
+                            <li><a href="index.html" class="header__menu-item">Главная</a></li>
+                            <li><a href="catalog.html" class="header__menu-item">Психологи</a></li>
+                            <li><a href="about.html" class="header__menu-item">О сообществе</a></li>
+                            <li><a href="events.html" class="header__menu-item">Мероприятия</a></li>
+                            <li><a href="contact.html" class="header__menu-item">Контакты</a></li>
+                            <button class="button mob"><span>Подобрать психолога</span></span></button>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
     </header>
     <main class="main page-main">
         <div class="header__opacite"></div>
-        
-<section class="contact-hero">
-    <div class="container">
-        <div class="contact-hero__row row">
-            <div class="contact-hero__content">
-                <div class="hero__top anim"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="#EAE8D9"/><path d="M5.24264 13.2426L12 20L18.7574 13.2426C19.553 12.447 20 11.3679 20 10.2426V10.0523C20 7.8143 18.1857 6 15.9477 6C14.7166 6 13.5523 6.55959 12.7833 7.52086L12 8.5L11.2167 7.52086C10.4477 6.55959 9.28338 6 8.05234 6C5.8143 6 4 7.8143 4 10.0523V10.2426C4 11.3679 4.44699 12.447 5.24264 13.2426Z" fill="#487437"/></svg><p class="c1 bold text">Мы рядом и готовы помочь</p></div>
-                <h1 class="anim">Контакты и помощь <br>с подбором</h1>
-                <p class="subtitle anim">Если сложно выбрать специалиста самостоятельно, оставьте заявку. Координатор подберёт подходящего специалиста с учётом вашего запроса и ситуации.</p>
-            </div>
-            <div class="contact-emergency anim">
-                <div class="contact-round-icon circle">♫</div>
-                <div>
-                    <h3>Для срочных и экстренных ситуаций</h3>
-                    <p class="text">Обращайтесь в местные службы помощи. Каталог не является экстренной психологической службой.</p>
+        <section class="contact">
+            <div class="container">
+                <div class="contact__row row">
+                    <div class="contact__top">
+                        <div class="contact__left">
+                            <div class="hero__top anim" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="12" fill="#EAE8D9"></circle>
+                                    <path d="M5.24264 13.2426L12 20L18.7574 13.2426C19.553 12.447 20 11.3679 20 10.2426V10.0523C20 7.8143 18.1857 6 15.9477 6C14.7166 6 13.5523 6.55959 12.7833 7.52086L12 8.5L11.2167 7.52086C10.4477 6.55959 9.28338 6 8.05234 6C5.8143 6 4 7.8143 4 10.0523V10.2426C4 11.3679 4.44699 12.447 5.24264 13.2426Z" fill="#487437"></path>
+                                </svg>
+                                <p class="c1 bold text">Мы рядом и готовы помочь</p>
+                            </div>
+                            <h1 class="anim">Контакты и помощь <br> с подбором</h1>
+                            <p class="subtitle c1 anim">Если сложно выбрать специалиста самостоятельно, оставьте заявку. Координатор подберёт подходящего специалиста с учётом вашего запроса и ситуации.</p>
+                        </div>
+                        <div class="contact__right anim">
+                            <div class="circle contact__right-circle">
+                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2070_527)">
+                                        <path d="M5.57157 12.9998V8.11556C5.58607 7.15548 5.78988 6.20769 6.17131 5.32651C6.55274 4.44533 7.1043 3.64807 7.79438 2.98041C8.48446 2.31276 9.2995 1.78784 10.1928 1.43572C11.0861 1.0836 12.0401 0.911207 13.0001 0.928419C13.9602 0.911207 14.9142 1.0836 15.8075 1.43572C16.7008 1.78784 17.5158 2.31276 18.2059 2.98041C18.896 3.64807 19.4475 4.44533 19.829 5.32651C20.2104 6.20769 20.4142 7.15548 20.4287 8.11556V12.9998M16.7144 22.7498C17.6995 22.7498 18.6443 22.3585 19.3408 21.662C20.0374 20.9654 20.4287 20.0207 20.4287 19.0356V14.857M16.7144 22.7498C16.7144 23.3655 16.4698 23.956 16.0345 24.3913C15.5991 24.8267 15.0087 25.0713 14.393 25.0713H11.6073C10.9916 25.0713 10.4011 24.8267 9.96578 24.3913C9.53043 23.956 9.28585 23.3655 9.28585 22.7498C9.28585 22.1342 9.53043 21.5437 9.96578 21.1083C10.4011 20.673 10.9916 20.4284 11.6073 20.4284H14.393C15.0087 20.4284 15.5991 20.673 16.0345 21.1083C16.4698 21.5437 16.7144 22.1342 16.7144 22.7498ZM2.78585 10.2141H4.643C4.88927 10.2141 5.12545 10.312 5.2996 10.4861C5.47374 10.6602 5.57157 10.8964 5.57157 11.1427V16.7141C5.57157 16.9604 5.47374 17.1966 5.2996 17.3707C5.12545 17.5449 4.88927 17.6427 4.643 17.6427H2.78585C2.29331 17.6427 1.82094 17.447 1.47266 17.0988C1.12437 16.7505 0.928711 16.2781 0.928711 15.7856V12.0713C0.928711 11.5787 1.12437 11.1064 1.47266 10.7581C1.82094 10.4098 2.29331 10.2141 2.78585 10.2141ZM23.2144 17.6427H21.3573C21.111 17.6427 20.8748 17.5449 20.7007 17.3707C20.5265 17.1966 20.4287 16.9604 20.4287 16.7141V11.1427C20.4287 10.8964 20.5265 10.6602 20.7007 10.4861C20.8748 10.312 21.111 10.2141 21.3573 10.2141H23.2144C23.707 10.2141 24.1793 10.4098 24.5276 10.7581C24.8759 11.1064 25.0716 11.5787 25.0716 12.0713V15.7856C25.0716 16.2781 24.8759 16.7505 24.5276 17.0988C24.1793 17.447 23.707 17.6427 23.2144 17.6427Z" stroke="#54504D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_2070_527">
+                                        <rect width="26" height="26" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="contact__right-content">
+                                <h3 class="contact__title">Для срочных и экстренных ситуаций</h3>
+                                <p class="subtitle light">Обращайтесь в местные службы помощи. Каталог не является экстренной психологической службой.</p>
+                            </div>
+                            <svg class="contact__right-svg" width="78" height="77" viewBox="0 0 78 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="57.5" cy="19.5" r="57.5" fill="#F5E7D6" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="contact__middle">
+                        <div class="contact__form">
+                            <h2 class="contact__title anim">Отправить заявку</h2>
+                            <form action="#">
+                                <label class="contact__field anim">
+                                    <span class="contact__field-icon">
+                                        <svg width="21" height="26" viewBox="0 0 21 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.7" d="M1.5 24.5C1.5 19.5601 5.52944 15.5556 10.5 15.5556C15.4706 15.5556 19.5 19.5601 19.5 24.5M15.6429 6.61111C15.6429 9.4339 13.3403 11.7222 10.5 11.7222C7.65968 11.7222 5.35714 9.4339 5.35714 6.61111C5.35714 3.78832 7.65968 1.5 10.5 1.5C13.3403 1.5 15.6429 3.78832 15.6429 6.61111Z" stroke="#235347" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <input type="text" placeholder="Имя и фамилия">
+                                </label>
+                                <label class="contact__field anim">
+                                    <span class="contact__field-icon">
+                                        <svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.7" fill-rule="evenodd" clip-rule="evenodd" d="M11 1C13.6478 1 16.1903 2.01099 18.0667 3.81542C19.9434 5.62023 20.9999 8.07156 21 10.6296C21 13.9312 19.5196 16.8729 17.8188 19.1721C16.1121 21.4794 14.1088 23.2414 12.8884 24.213C12.6038 24.4396 12.2281 24.7637 11.6775 24.9145C11.2608 25.0285 10.7392 25.0285 10.3225 24.9145C9.77176 24.7637 9.39322 24.4372 9.11157 24.213C7.89119 23.2413 5.888 21.4783 4.18115 19.1709C2.48051 16.8717 1 13.931 1 10.6296C1 8.07121 2.05653 5.62028 3.93335 3.81542C5.8097 2.01103 8.35228 1.00003 11 1ZM11 5.86171C8.92893 5.86171 7.25 7.4942 7.25 9.50799C7.25 11.5218 8.92893 13.1543 11 13.1543C13.0711 13.1543 14.75 11.5218 14.75 9.50799C14.75 7.4942 13.0711 5.86171 11 5.86171Z" stroke="#235347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <input type="text" placeholder="Город/Онлайн">
+                                </label>
+                                <label class="contact__field anim">
+                                    <span class="contact__field-icon">
+                                        <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.7" fill-rule="evenodd" clip-rule="evenodd" d="M23.9762 2.03135C24.0282 1.72305 23.9946 1.40675 23.8788 1.11543C23.763 0.824107 23.5692 0.568414 23.3176 0.374993C23.0661 0.181571 22.766 0.0574986 22.4485 0.0157023C22.1311 -0.0260939 21.808 0.0159151 21.5129 0.137353L1.09495 8.52407C-0.328337 9.10881 -0.401173 11.117 1.09495 11.7227C2.5766 12.3249 4.07963 12.8758 5.60122 13.3744C6.99585 13.824 8.51704 14.2399 9.73615 14.3575C10.0693 14.7466 10.4884 15.1216 10.9159 15.4641C11.569 15.9883 12.3547 16.5276 13.1666 17.0447C14.7929 18.0814 16.597 19.0727 17.8126 19.718C19.2657 20.4868 21.0054 19.6015 21.2657 18.0558L23.9762 2.03135ZM3.3839 10.1117L21.4424 2.69414L18.9135 17.6505C17.7206 17.018 16.0024 16.071 14.4717 15.0948C13.7662 14.6529 13.085 14.1751 12.4311 13.6633C12.2563 13.524 12.0866 13.3787 11.9224 13.2276L16.652 8.61493C16.876 8.39652 17.002 8.10022 17.0021 7.79123C17.0022 7.48224 16.8765 7.18586 16.6526 6.96729C16.4287 6.74872 16.125 6.62587 15.8082 6.62576C15.4915 6.62565 15.1877 6.74829 14.9636 6.96671L9.7851 12.0185C8.90869 11.909 7.68839 11.5922 6.34868 11.1612C5.35133 10.837 4.3631 10.4867 3.3851 10.1106L3.3839 10.1117Z" fill="#235347" />
+                                        </svg>
+                                    </span>
+                                    <input type="text" placeholder="Телеграм или Email">
+                                </label>
+                                <div class="contact__field anim contact__field-select">
+                                    <button type="button" class="contact__field-button">
+                                        <span class="contact__field-icon">
+                                            <svg width="24" height="27" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path opacity="0.7" d="M1 9.33333H23M1 9.33333V21.5558C1 23.1115 1 23.889 1.29973 24.4832C1.56338 25.0058 1.98377 25.4312 2.50122 25.6975C3.0889 26 3.85862 26 5.39575 26H18.6042C20.1414 26 20.91 26 21.4977 25.6975C22.0151 25.4312 22.4369 25.0058 22.7006 24.4832C23 23.8896 23 23.1132 23 21.5605V9.33333M1 9.33333V8.22249C1 6.66679 1 5.88836 1.29973 5.29416C1.56338 4.77149 1.98377 4.34685 2.50122 4.08054C3.08948 3.77778 3.86012 3.77778 5.40027 3.77778H6.5M23 9.33333V8.21793C23 6.66527 23 5.88778 22.7006 5.29416C22.4369 4.77149 22.0151 4.34685 21.4977 4.08054C20.9094 3.77778 20.1404 3.77778 18.6003 3.77778H17.5M6.5 3.77778H17.5M6.5 3.77778V1M17.5 3.77778V1M17.5 14.8889H6.5" stroke="#54504D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>  
+                                        </span>
+                                        <span class="contact__field-value">Хочу разместить анкету специалиста</span>
+                                        <span class="contact__field-arrow">
+                                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 1L5 5L1 1" stroke="#235347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <div class="contact__field-dropdown">
+                                        <button type="button">Хочу подобрать специалиста</button>
+                                        <button type="button">Хочу предложить мероприятие</button>
+                                    </div>
+                                    <input type="hidden" name="topic" value="Хочу разместить анкету специалиста">
+                                </div>
+                                <label class="contact__field anim contact__field-full">
+                                    <span class="contact__field-icon">
+                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.7" d="M7.51411 25.2693C9.42293 26.3702 11.6376 27 13.9995 27C21.1792 27 27 21.1798 27 14C27 6.82031 21.1797 1 14 1C6.8203 1 1 6.82031 1 14C1 16.3619 1.62984 18.5766 2.73072 20.4854L2.73499 20.4928C2.84091 20.6765 2.89433 20.7691 2.91852 20.8566C2.94134 20.9392 2.94772 21.0134 2.94187 21.0989C2.93559 21.1907 2.90465 21.2859 2.84121 21.4762L1.73069 24.8078L1.72929 24.8121C1.49498 25.5151 1.37782 25.8665 1.46133 26.1007C1.53415 26.3049 1.69577 26.4661 1.89996 26.5389C2.13362 26.6222 2.48351 26.5056 3.18334 26.2723L3.19206 26.2691L6.52362 25.1585C6.71332 25.0953 6.80975 25.0632 6.90141 25.057C6.98686 25.0511 7.06056 25.0588 7.14312 25.0817C7.23088 25.1059 7.32354 25.1594 7.50814 25.2658L7.51411 25.2693Z" stroke="#54504D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <input type="text" placeholder="Город, удобный формат и коротко ваш запрос">
+                                </label>
+                                <button class="button contact__form-button anim"><span>Отправить заявку</span></button>
+                            </form>
+                            <p class="small center anim">После отправки координатор уточнит данные, фото, образование, описание подхода и условия размещения.</p>
+                        </div>
+                        <div class="contact__serbia">
+                            <img src="assets/image/contact-leaf.svg" alt="" class="contact__serbia-img">
+                            <h2 class="contact__title anim">Мы работаем по <br> всей Сербии</h2>
+                            <div class="contact__serbia-item anim">
+                                <div class="contact__serbia-circle circle">
+                                    <svg width="34" height="29" viewBox="0 0 34 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M25.5 27.25C25.5 24.3505 21.5825 22 16.75 22C11.9175 22 8 24.3505 8 27.25M32.5 22.0007C32.5 19.8478 30.3403 17.9976 27.25 17.1875M1 22.0007C1 19.8478 3.15967 17.9976 6.25 17.1875M27.25 10.1632C28.3241 9.20187 29 7.80487 29 6.25C29 3.3505 26.6495 1 23.75 1C22.4054 1 21.1788 1.50549 20.25 2.33681M6.25 10.1632C5.17594 9.20187 4.5 7.80487 4.5 6.25C4.5 3.3505 6.8505 1 9.75 1C11.0946 1 12.3212 1.50549 13.25 2.33681M16.75 16.75C13.8505 16.75 11.5 14.3995 11.5 11.5C11.5 8.6005 13.8505 6.25 16.75 6.25C19.6495 6.25 22 8.6005 22 11.5C22 14.3995 19.6495 16.75 16.75 16.75Z" stroke="#54504D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="contact__serbia-content">
+                                    <h3 class="subtitle c1 bold">Офлайн и онлайн</h3>
+                                    <p class="subtitle c1 light">Встречи, консультации и поддержка в любом формате.</p>
+                                </div>
+                            </div>
+                            <div class="contact__serbia-item anim">
+                                <div class="contact__serbia-circle circle">
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 12.495H7.36111M1 12.495C1 18.8435 6.12634 23.99 12.45 23.99M1 12.495C1 6.14649 6.12634 1 12.45 1M7.36111 12.495H17.5389M7.36111 12.495C7.36111 18.8435 9.63948 23.99 12.45 23.99M7.36111 12.495C7.36111 6.14649 9.63948 1 12.45 1M17.5389 12.495H23.9M17.5389 12.495C17.5389 6.14649 15.2605 1 12.45 1M17.5389 12.495C17.5389 18.8435 15.2605 23.99 12.45 23.99M23.9 12.495C23.9 6.14649 18.7737 1 12.45 1M23.9 12.495C23.9 18.8435 18.7737 23.99 12.45 23.99" stroke="#54504D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="contact__serbia-content">
+                                    <h3 class="subtitle c1 bold">Сообщество специалистов</h3>
+                                    <p class="subtitle c1 light">Психологи из разных городов объединились, чтобы быть рядом там, где вы есть.</p>
+                                </div>
+                            </div>
+                            <div class="contact__serbia-item anim">
+                                <div class="contact__serbia-circle circle">
+                                    <svg width="40" height="37" viewBox="0 0 40 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.46973 13.5H1.96973C1.41744 13.5 0.965789 13.9489 1.0027 14.5C1.69238 24.7961 12.9697 26.6451 12.9697 35.5" stroke="#54504D" stroke-width="2" stroke-linecap="round" />
+                                        <path d="M35.4697 14H37.9697C38.522 14 38.9737 14.4489 38.9368 15C38.2471 25.2961 26.9697 27.1451 26.9697 36" stroke="#54504D" stroke-width="2" stroke-linecap="round" />
+                                        <path d="M26.3848 1C29.4589 1.00001 31.9696 3.52249 31.9697 6.65723V6.96973C31.9697 8.55659 31.3458 10.0765 30.2393 11.1953L19.9697 21.5771L9.7002 11.1953C8.59357 10.0765 7.96973 8.55659 7.96973 6.96973V6.65723C7.96983 3.52252 10.4805 1.00005 13.5547 1C15.2471 1 16.8516 1.77771 17.9131 3.11914L19.1855 4.72754L19.9697 5.71875L20.7539 4.72754L22.0264 3.11914C23.0878 1.77771 24.6923 1 26.3848 1Z" stroke="#54504D" stroke-width="2" />
+                                    </svg>
+                                </div>
+                                <div class="contact__serbia-content">
+                                    <h3 class="subtitle c1 bold">Поддержка рядом</h3>
+                                    <p class="subtitle c1 light">Где бы вы ни находились вы не одни.</p>
+                                </div>
+                            </div>
+                            <svg class="contact__serbia-svg" width="108" height="110" viewBox="0 0 108 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="104.5" cy="104.5" r="104.5" fill="#F5E7D6" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="contact__bottom">
+                        <div class="contact__item anim">
+                            <div class="contact__item-top">
+                                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M56 28C56 43.464 43.464 56 28 56C12.536 56 0 43.464 0 28C0 12.536 12.536 0 28 0C43.464 0 56 12.536 56 28ZM29.0034 20.6708C26.28 21.8036 20.837 24.1481 12.6744 27.7044C11.3489 28.2315 10.6546 28.7472 10.5914 29.2514C10.4846 30.1035 11.5517 30.439 13.0048 30.8959C13.2024 30.9581 13.4072 31.0225 13.6172 31.0907C15.0468 31.5555 16.9699 32.0991 17.9697 32.1207C18.8765 32.1403 19.8887 31.7665 21.0062 30.9991C28.6327 25.851 32.5696 23.2489 32.8167 23.1928C32.9911 23.1532 33.2327 23.1035 33.3965 23.249C33.5602 23.3945 33.5441 23.6701 33.5267 23.744C33.421 24.1947 29.2323 28.0889 27.0646 30.1041C26.3888 30.7324 25.9095 31.178 25.8115 31.2798C25.592 31.5078 25.3683 31.7235 25.1533 31.9307C23.8251 33.2111 22.8291 34.1712 25.2084 35.7392C26.3518 36.4927 27.2668 37.1157 28.1796 37.7373C29.1764 38.4162 30.1707 39.0933 31.4571 39.9366C31.7848 40.1514 32.0979 40.3745 32.4027 40.5919C33.5628 41.4189 34.6051 42.162 35.8927 42.0435C36.6409 41.9746 37.4137 41.2711 37.8062 39.1728C38.7338 34.214 40.5571 23.4697 40.9785 19.0423C41.0154 18.6544 40.969 18.1579 40.9317 17.94C40.8944 17.7221 40.8165 17.4116 40.5332 17.1817C40.1977 16.9095 39.6798 16.8521 39.4482 16.8562C38.3951 16.8747 36.7793 17.4366 29.0034 20.6708Z" fill="#54504D" />
+                                </svg>
+                                <div class="contact__item-content">
+                                    <p class="subtitle bold c1">Telegram</p>
+                                    <p class="text c1 light">Удобный способ связаться и получить помощь.</p>
+                                </div>
+                            </div>
+                            <a href="#" class="button contact__item-button"><span>Написать в Telegram</span></a>
+                        </div>
+                        <div class="contact__item anim">
+                            <div class="contact__item-top">
+                                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M28 0C43.4638 0 56 12.5362 56 28C56 43.4638 43.4638 56 28 56C23.1233 56 18.539 54.7533 14.5459 52.5615L0 56L3.72852 41.9697C1.35708 37.8584 0 33.0874 0 28C5.4767e-07 12.5362 12.5362 5.47637e-07 28 0ZM28 5.01465C15.306 5.01465 5.01476 15.305 5.01465 27.999C5.01465 32.8936 6.54543 37.4303 9.15332 41.1582L6.74219 49.3721L15.3359 47.1836C18.9674 49.5861 23.3201 50.9854 28 50.9854V50.9844C40.6941 50.9844 50.9854 40.6931 50.9854 27.999C50.9852 15.305 40.694 5.01465 28 5.01465ZM20.3037 14.1816C20.6467 14.1536 20.9622 14.353 21.1084 14.6641L24.3027 21.4385C24.4534 21.7589 24.3871 22.1403 24.1367 22.3906L21.7559 24.7705C21.241 25.2854 21.0907 26.0874 21.4453 26.7236C22.3141 28.2815 23.4816 29.7825 24.835 31.1631C26.2155 32.5164 27.7165 33.6847 29.2744 34.5527C29.9106 34.9074 30.7119 34.7571 31.2275 34.2422L33.6084 31.8613C33.8587 31.6111 34.2393 31.5439 34.5596 31.6953L41.334 34.8887C41.6451 35.0349 41.8444 35.3511 41.8164 35.6934C41.7433 36.5847 41.3856 38.3713 39.7842 39.9727C35.2637 44.493 27.146 39.3782 26.8154 39.1807C24.819 38.1081 22.922 36.6732 21.123 34.875C19.3249 33.0768 17.889 31.1791 16.8164 29.1826C16.6181 28.8528 11.5035 20.7351 16.0244 16.2139C17.6256 14.6126 19.4123 14.2548 20.3037 14.1816Z" fill="#54504D" />
+                                </svg>
+                                <div class="contact__item-content">
+                                    <p class="subtitle bold c1">WhatsApp</p>
+                                    <p class="text c1 light">Удобный способ связаться и получить помощь.</p>
+                                </div>
+                            </div>
+                            <a href="#" class="button contact__item-button"><span>Написать в Telegram</span></a>
+                        </div>
+                        <div class="contact__item anim">
+                            <div class="contact__item-top">
+                                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="28.0013" cy="28.0013" r="26.0013" stroke="#54504D" stroke-width="4" />
+                                    <path d="M20.1373 31.6361L12.5435 35.2161C12.1947 35.38 11.9715 35.734 12.0029 36.1176C12.0849 37.1168 12.4859 39.1195 14.2811 40.9147C19.3483 45.9822 28.4477 40.2486 28.8183 40.0272C31.0563 38.8248 33.1827 37.2162 35.1993 35.2004C37.215 33.1846 38.8245 31.0572 40.0267 28.819C40.2491 28.4494 45.9823 19.3495 40.9143 14.2812C39.1192 12.486 37.1165 12.0849 36.1174 12.0029C35.7329 11.9715 35.3798 12.1947 35.2159 12.5435L31.6352 20.1377C31.4661 20.4969 31.5402 20.9241 31.8209 21.2048L34.4896 23.8737C35.0668 24.4509 35.2359 25.3498 34.8384 26.063C33.8645 27.8094 32.555 29.4913 31.038 31.0389C29.4905 32.556 27.8087 33.8664 26.0624 34.8394C25.3492 35.237 24.4512 35.0679 23.8731 34.4907L21.2044 31.8218C20.9237 31.5411 20.4965 31.4661 20.1373 31.6361Z" fill="#54504D" />
+                                </svg>
+                                <div class="contact__item-content">
+                                    <p class="subtitle bold c1">Телефон</p>
+                                    <p class="text c1 light">Свяжитесь по телефону. В рабочие часы.</p>
+                                </div>
+                            </div>
+                            <a href="#" class="button contact__item-button"><span>Написать в Telegram</span></a>
+                        </div>
+                        <div class="contact__item anim">
+                            <div class="contact__item-top">
+                                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2070_514)">
+                                        <path d="M51.1607 28.139C51.1605 23.0717 49.4882 18.1461 46.4033 14.1261C43.3183 10.1061 38.9931 7.21638 34.0985 5.90505C29.2038 4.59372 24.0132 4.9341 19.3318 6.87341C14.6503 8.81271 10.7395 12.2426 8.20596 16.631C5.67243 21.0195 4.65773 26.1213 5.31923 31.1452C5.98074 36.1691 8.28148 40.8343 11.8646 44.4174C15.4478 48.0004 20.1131 50.3011 25.137 50.9624C30.1609 51.6238 35.2627 50.609 39.6511 48.0754C40.2382 47.7416 40.9336 47.6535 41.5854 47.8305C42.2372 48.0074 42.7926 48.435 43.1303 49.0199C43.468 49.6049 43.5606 50.2996 43.388 50.9526C43.2153 51.6055 42.7914 52.1637 42.2088 52.5053C36.8446 55.6028 30.6082 56.8437 24.4669 56.0355C18.3256 55.2274 12.6226 52.4153 8.24235 48.0355C3.86215 43.6557 1.04958 37.9529 0.240877 31.8116C-0.567826 25.6704 0.672533 19.4339 3.76957 14.0695C6.86661 8.705 11.6472 4.51241 17.37 2.14194C23.0927 -0.228532 29.4378 -0.644393 35.421 0.958853C41.4042 2.5621 46.6911 6.09485 50.4618 11.0092C54.2326 15.9235 56.2763 21.9447 56.2761 28.139C56.2761 28.8174 56.0066 29.4679 55.527 29.9476C55.0473 30.4272 54.3967 30.6967 53.7184 30.6967C53.0401 30.6967 52.3895 30.4272 51.9098 29.9476C51.4302 29.4679 51.1607 28.8174 51.1607 28.139Z" fill="#54504D" />
+                                        <path d="M40.7892 31.4097C40.7892 32.7664 41.3282 34.0675 42.2875 35.0268C43.2468 35.9861 44.5479 36.5251 45.9046 36.5251C47.2613 36.5251 48.5624 35.9861 49.5217 35.0268C50.481 34.0675 51.02 32.7664 51.02 31.4097H56.1354C56.1354 34.123 55.0575 36.7253 53.1388 38.6439C51.2202 40.5626 48.618 41.6404 45.9046 41.6404C43.1912 41.6404 40.589 40.5626 38.6703 38.6439C36.7517 36.7253 35.6738 34.123 35.6738 31.4097H40.7892Z" fill="#54504D" />
+                                        <path d="M35.6725 27.9999C35.6725 25.9649 34.8641 24.0132 33.4251 22.5742C31.9861 21.1352 30.0344 20.3268 27.9994 20.3268C25.9644 20.3268 24.0127 21.1352 22.5737 22.5742C21.1347 24.0132 20.3263 25.9649 20.3263 27.9999C20.3263 30.0349 21.1347 31.9866 22.5737 33.4256C24.0127 34.8646 25.9644 35.673 27.9994 35.673C30.0344 35.673 31.9861 34.8646 33.4251 33.4256C34.8641 31.9866 35.6725 30.0349 35.6725 27.9999ZM40.7879 27.9999C40.7879 31.3916 39.4405 34.6444 37.0422 37.0427C34.6439 39.441 31.3911 40.7883 27.9994 40.7883C24.6077 40.7883 21.3549 39.441 18.9566 37.0427C16.5583 34.6444 15.2109 31.3916 15.2109 27.9999C15.2109 24.6082 16.5583 21.3554 18.9566 18.9571C21.3549 16.5588 24.6077 15.2114 27.9994 15.2114C31.3911 15.2114 34.6439 16.5588 37.0422 18.9571C39.4405 21.3554 40.7879 24.6082 40.7879 27.9999ZM56.134 25.4422V31.4101H51.0186V25.4422H56.134Z" fill="#54504D" />
+                                        <path d="M35.6738 34.8204V17.7691C35.6738 17.0908 35.9433 16.4402 36.423 15.9606C36.9026 15.4809 37.5532 15.2114 38.2315 15.2114C38.9099 15.2114 39.5604 15.4809 40.0401 15.9606C40.5197 16.4402 40.7892 17.0908 40.7892 17.7691V34.8204C40.7892 35.4987 40.5197 36.1493 40.0401 36.629C39.5604 37.1086 38.9099 37.3781 38.2315 37.3781C37.5532 37.3781 36.9026 37.1086 36.423 36.629C35.9433 36.1493 35.6738 35.4987 35.6738 34.8204Z" fill="#54504D" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_2070_514">
+                                        <rect width="56" height="56" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <div class="contact__item-content">
+                                    <p class="subtitle bold c1">Email</p>
+                                    <p class="text c1 light">Для анкет специалистов, организационных вопросов и сотрудничества.</p>
+                                </div>
+                            </div>
+                            <a href="#" class="button contact__item-button"><span>Написать в Telegram</span></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-<section class="contact-content">
-    <div class="container">
-        <div class="contact-content__row row">
-            <form class="contact-form anim" action="thanks.html">
-                <h2>Отправить заявку</h2>
-                <div class="contact-form__grid">
-                    <label class="contact-field"><span class="contact-field__icon">⌁</span><input type="text" placeholder="Имя и фамилия"></label>
-                    <label class="contact-field"><span class="contact-field__icon">⌾</span><input type="text" placeholder="Город/Онлайн"></label>
-                    <label class="contact-field"><span class="contact-field__icon">↗</span><input type="text" placeholder="Телеграм или Email"></label>
-                    <label class="contact-field contact-select"><span class="contact-field__icon">▣</span><select><option>Хочу разместить анкету специалиста</option><option>Хочу подобрать специалиста</option><option>Хочу предложить мероприятие</option></select></label>
-                </div>
-                <label class="contact-field contact-field--full"><span class="contact-field__icon">◌</span><textarea placeholder="Город, удобный формат и коротко ваш запрос"></textarea></label>
-                <button class="button contact-form__button" type="submit"><span>Отправить заявку</span></button>
-                <p class="small contact-form__note">После отправки координатор уточнит данные, фото, образование, описание подхода и условия размещения.</p>
-            </form>
-            <aside class="contact-map-card anim">
-                <h2>Мы работаем по всей Сербии</h2>
-                <div class="contact-map-card__items">
-                    <div class="contact-map-card__item"><div class="contact-round-icon circle">☊</div><div><p class="text bold c1">Офлайн и онлайн</p><p class="text">Встречи, консультации и поддержка в любом формате.</p></div></div>
-                    <div class="contact-map-card__item"><div class="contact-round-icon circle">◉</div><div><p class="text bold c1">Сообщество специалистов</p><p class="text">Психологи из разных городов объединились, чтобы быть рядом там, где вы есть.</p></div></div>
-                    <div class="contact-map-card__item"><div class="contact-round-icon circle">♡</div><div><p class="text bold c1">Поддержка рядом</p><p class="text">Где бы вы ни находились вы не одни.</p></div></div>
-                </div>
-            </aside>
-        </div>
-    </div>
-</section>
-<section class="contact-methods">
-    <div class="container">
-        <div class="contact-methods__row row">
-            <article class="contact-method anim"><div class="contact-method__icon">✈</div><div><h3>Telegram</h3><p class="small">Удобный способ связаться и получить помощь.</p></div><a href="#" class="button"><span>Написать в Telegram</span></a></article>
-            <article class="contact-method anim"><div class="contact-method__icon">☏</div><div><h3>WhatsApp</h3><p class="small">Удобный способ связаться и получить помощь.</p></div><a href="#" class="button"><span>Написать в WhatsApp</span></a></article>
-            <article class="contact-method anim"><div class="contact-method__icon">◔</div><div><h3>Телефон</h3><p class="small">Свяжитесь по телефону. В рабочие часы.</p></div><a href="tel:+381601234567" class="button"><span>+381 60 123 4567</span></a></article>
-            <article class="contact-method anim"><div class="contact-method__icon">@</div><div><h3>Email</h3><p class="small">Для анкет специалистов, организационных вопросов и сотрудничества.</p></div><a href="mailto:hello@slushat-i-slyshat.com" class="button"><span>hello@slushat-i-slyshat.com</span></a></article>
-        </div>
-    </div>
-</section>
+        </section>
     </main>
     <div class="opacite"></div>
     <footer class="footer">
@@ -101,53 +267,117 @@
             <div class="footer__row row">
                 <div class="footer__top">
                     <div class="footer__left">
-                        <div class="header__logo">
+                        <a href="index.html" class="header__logo">
                             <img src="assets/image/logo.png" alt="">
                             <div class="header__logo-text">
                                 <p>Cлушать и слышать</p>
                                 <p>Сообщество психологов <br> и психотерапевтов Сербии</p>
                             </div>
-                        </div>
+                        </a>
                         <p class="small">Профессиональное сообщество русскоязычных психологов, психотерапевтов, психиатров и неврологов в Сербии. Мы помогаем найти специалиста для очных и онлайн-консультаций и развиваем культуру заботы о ментальном здоровье.</p>
                     </div>
                     <nav class="footer__nav">
                         <ul class="footer__menu">
-                           <li><p class="text bold c1">Специалисты</p></li>
-                           <li><a href="catalog.html" class="small">Каталог специалистов</a></li>
+                           <li><p class="text bold c1">Специалисты</p></li> 
+                           <li><a href="#" class="small">Каталог специалистов</a></li>
                            <li><a href="#" class="small">Направления</a></li>
                            <li><a href="#" class="small">Города</a></li>
                            <li><a href="#" class="small">Онлайн-консультации</a></li>
                         </ul>
                         <ul class="footer__menu">
-                           <li><p class="text bold c1">Сообщество</p></li>
-                           <li><a href="about.html" class="small">О проекте</a></li>
+                           <li><p class="text bold c1">Сообщество</p></li> 
+                           <li><a href="#" class="small">О проекте</a></li>
                            <li><a href="#" class="small">Руководители направлений</a></li>
-                           <li><a href="events.html" class="small">Мероприятия</a></li>
+                           <li><a href="#" class="small">Для специалистов</a></li>
                            <li><a href="#" class="small">Партнёры</a></li>
                         </ul>
                         <ul class="footer__menu">
-                           <li><p class="text bold c1">Полезная информация</p></li>
+                           <li><p class="text bold c1">Полезная информация</p></li> 
                            <li><a href="#" class="small">Часто задаваемые вопросы</a></li>
                            <li><a href="#" class="small">Политика конфиденциальности</a></li>
                            <li><a href="#" class="small">Пользовательское соглашение</a></li>
                         </ul>
                         <ul class="footer__menu">
-                           <li><p class="text bold c1">Контакты</p></li>
-                           <li><a class="footer__menu-row" href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M22 11C22 17.0751 17.0751 22 11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11ZM11.3942 8.12068C10.3243 8.5657 8.18596 9.48676 4.97924 10.8839C4.45851 11.091 4.18574 11.2935 4.1609 11.4916C4.11894 11.8264 4.53815 11.9582 5.10901 12.1377C5.18667 12.1621 5.26712 12.1874 5.34961 12.2142C5.91125 12.3968 6.66676 12.6104 7.05951 12.6189C7.41578 12.6266 7.81342 12.4797 8.25242 12.1782C11.2486 10.1558 12.7952 9.13349 12.8923 9.11145C12.9608 9.09591 13.0557 9.07636 13.12 9.13352C13.1844 9.19069 13.178 9.29896 13.1712 9.328C13.1297 9.50504 11.4841 11.0349 10.6325 11.8266C10.367 12.0734 10.1787 12.2485 10.1402 12.2885C10.054 12.3781 9.96612 12.4628 9.88165 12.5442C9.35987 13.0472 8.96859 13.4244 9.90331 14.0404C10.3525 14.3364 10.712 14.5812 11.0705 14.8254C11.4622 15.0921 11.8528 15.3581 12.3581 15.6894C12.4869 15.7738 12.6099 15.8614 12.7296 15.9468C13.1854 16.2717 13.5949 16.5636 14.1007 16.5171C14.3946 16.49 14.6983 16.2136 14.8525 15.3893C15.2169 13.4412 15.9332 9.22025 16.0987 7.48089C16.1132 7.3285 16.095 7.13347 16.0803 7.04786C16.0657 6.96225 16.035 6.84027 15.9238 6.74997C15.792 6.64303 15.5885 6.62047 15.4975 6.62208C15.0838 6.62937 14.449 6.85008 11.3942 8.12068Z" fill="#54504D"/></svg><p class="small">Telegram сообщество</p></a></li>
-                           <li><a class="footer__menu-row" href="mailto:hello@slushat-i-slyshat.com"><span class="footer-simple-icon">@</span><p class="small">hello@slushat-i-slyshat.com</p></a></li>
-                           <li><a class="footer__menu-row" href="#"><span class="footer-simple-icon">◎</span><p class="small">@slushat_i_slyshat</p></a></li>
-                           <li><a class="footer__menu-row" href="#"><span class="footer-simple-icon">◌</span><p class="small">slushat-i-slyshat.com</p></a></li>
+                           <li><p class="text bold c1">Контакты</p></li> 
+                           <li>
+                                <a class="footer__menu-row" href="#">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M22 11C22 17.0751 17.0751 22 11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11ZM11.3942 8.12068C10.3243 8.5657 8.18596 9.48676 4.97924 10.8839C4.45851 11.091 4.18574 11.2935 4.1609 11.4916C4.11894 11.8264 4.53815 11.9582 5.10901 12.1377C5.18667 12.1621 5.26712 12.1874 5.34961 12.2142C5.91125 12.3968 6.66676 12.6104 7.05951 12.6189C7.41578 12.6266 7.81342 12.4797 8.25242 12.1782C11.2486 10.1558 12.7952 9.13349 12.8923 9.11145C12.9608 9.09591 13.0557 9.07636 13.12 9.13352C13.1844 9.19069 13.178 9.29896 13.1712 9.328C13.1297 9.50504 11.4841 11.0349 10.6325 11.8266C10.367 12.0734 10.1787 12.2485 10.1402 12.2885C10.054 12.3781 9.96612 12.4628 9.88165 12.5442C9.35987 13.0472 8.96859 13.4244 9.90331 14.0404C10.3525 14.3364 10.712 14.5812 11.0705 14.8254C11.4622 15.0921 11.8528 15.3581 12.3581 15.6894C12.4869 15.7738 12.6099 15.8614 12.7296 15.9468C13.1854 16.2717 13.5949 16.5636 14.1007 16.5171C14.3946 16.49 14.6983 16.2136 14.8525 15.3893C15.2169 13.4412 15.9332 9.22025 16.0987 7.48089C16.1132 7.3285 16.095 7.13347 16.0803 7.04786C16.0657 6.96225 16.035 6.84027 15.9238 6.74997C15.792 6.64303 15.5885 6.62047 15.4975 6.62208C15.0838 6.62937 14.449 6.85008 11.3942 8.12068Z" fill="#54504D" />
+                                    </svg>
+                                    <p class="small">Telegram сообщество</p>
+                                </a>
+                            </li>
+                           <li>
+                                <a class="footer__menu-row" href="#">
+                                    <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.7935 10.15C17.7934 8.46746 17.2381 6.83195 16.2138 5.49713C15.1895 4.16231 13.7533 3.20279 12.1281 2.76737C10.5028 2.33195 8.77935 2.44498 7.22489 3.08891C5.67043 3.73284 4.37188 4.8717 3.53064 6.32886C2.6894 7.78601 2.35248 9.48003 2.57212 11.1482C2.79177 12.8163 3.55572 14.3654 4.74548 15.5551C5.93524 16.7449 7.48432 17.5088 9.15248 17.7284C10.8206 17.948 12.5147 17.611 13.9718 16.7697C14.1667 16.6589 14.3976 16.6297 14.6141 16.6884C14.8305 16.7472 15.0149 16.8892 15.127 17.0834C15.2392 17.2776 15.2699 17.5083 15.2126 17.7251C15.1553 17.9419 15.0145 18.1273 14.8211 18.2407C13.0399 19.2692 10.9692 19.6812 8.92998 19.4129C6.8908 19.1445 4.99714 18.2108 3.54273 16.7565C2.08831 15.3022 1.15441 13.4086 0.88589 11.3695C0.617366 9.33032 1.02922 7.25954 2.05757 5.47831C3.08592 3.69708 4.6733 2.30496 6.5735 1.51786C8.4737 0.730758 10.5805 0.592674 12.5672 1.12502C14.5539 1.65737 16.3094 2.83039 17.5614 4.46216C18.8135 6.09393 19.4921 8.09325 19.492 10.15C19.492 10.3753 19.4025 10.5913 19.2433 10.7505C19.084 10.9098 18.868 10.9993 18.6427 10.9993C18.4175 10.9993 18.2015 10.9098 18.0422 10.7505C17.883 10.5913 17.7935 10.3753 17.7935 10.15Z" fill="#54504D" />
+                                        <path d="M14.3494 11.2354C14.3494 11.6858 14.5284 12.1179 14.8469 12.4364C15.1654 12.7549 15.5975 12.9339 16.0479 12.9339C16.4984 12.9339 16.9304 12.7549 17.249 12.4364C17.5675 12.1179 17.7465 11.6858 17.7465 11.2354H19.445C19.445 12.1363 19.0871 13.0004 18.45 13.6374C17.8129 14.2745 16.9489 14.6324 16.0479 14.6324C15.147 14.6324 14.2829 14.2745 13.6459 13.6374C13.0088 13.0004 12.6509 12.1363 12.6509 11.2354H14.3494Z" fill="#54504D" />
+                                        <path d="M12.6508 10.1028C12.6508 9.42705 12.3824 8.77901 11.9046 8.30121C11.4268 7.8234 10.7787 7.55497 10.103 7.55497C9.4273 7.55497 8.77925 7.8234 8.30145 8.30121C7.82365 8.77901 7.55522 9.42705 7.55522 10.1028C7.55522 10.7785 7.82365 11.4265 8.30145 11.9043C8.77925 12.3821 9.4273 12.6506 10.103 12.6506C10.7787 12.6506 11.4268 12.3821 11.9046 11.9043C12.3824 11.4265 12.6508 10.7785 12.6508 10.1028ZM14.3493 10.1028C14.3493 11.229 13.902 12.309 13.1056 13.1054C12.3093 13.9017 11.2292 14.3491 10.103 14.3491C8.97682 14.3491 7.89675 13.9017 7.10041 13.1054C6.30407 12.309 5.85669 11.229 5.85669 10.1028C5.85669 8.97657 6.30407 7.8965 7.10041 7.10016C7.89675 6.30382 8.97682 5.85645 10.103 5.85645C11.2292 5.85645 12.3093 6.30382 13.1056 7.10016C13.902 7.8965 14.3493 8.97657 14.3493 10.1028ZM19.4449 9.2535V11.2351H17.7464V9.2535H19.4449Z" fill="#54504D" />
+                                        <path d="M12.6509 12.3675V6.70571C12.6509 6.48047 12.7404 6.26446 12.8996 6.10519C13.0589 5.94592 13.2749 5.85645 13.5001 5.85645C13.7254 5.85645 13.9414 5.94592 14.1007 6.10519C14.2599 6.26446 14.3494 6.48047 14.3494 6.70571V12.3675C14.3494 12.5927 14.2599 12.8087 14.1007 12.968C13.9414 13.1273 13.7254 13.2167 13.5001 13.2167C13.2749 13.2167 13.0589 13.1273 12.8996 12.968C12.7404 12.8087 12.6509 12.5927 12.6509 12.3675Z" fill="#54504D" />
+                                    </svg>
+                                    <p class="small">hello@slushat-i-slyshat.com</p>
+                                </a>
+                           </li>
+                           <li>
+                                <a class="footer__menu-row" href="#">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_141_5104)">
+                                            <path d="M10 1.80078C12.6719 1.80078 12.9883 1.8125 14.0391 1.85937C15.0156 1.90234 15.543 2.06641 15.8945 2.20313C16.3594 2.38281 16.6953 2.60156 17.043 2.94922C17.3945 3.30078 17.6094 3.63281 17.7891 4.09766C17.9258 4.44922 18.0898 4.98047 18.1328 5.95313C18.1797 7.00781 18.1914 7.32422 18.1914 9.99219C18.1914 12.6641 18.1797 12.9805 18.1328 14.0313C18.0898 15.0078 17.9258 15.5352 17.7891 15.8867C17.6094 16.3516 17.3906 16.6875 17.043 17.0352C16.6914 17.3867 16.3594 17.6016 15.8945 17.7813C15.543 17.918 15.0117 18.082 14.0391 18.125C12.9844 18.1719 12.668 18.1836 10 18.1836C7.32813 18.1836 7.01172 18.1719 5.96094 18.125C4.98438 18.082 4.45703 17.918 4.10547 17.7813C3.64063 17.6016 3.30469 17.3828 2.95703 17.0352C2.60547 16.6836 2.39063 16.3516 2.21094 15.8867C2.07422 15.5352 1.91016 15.0039 1.86719 14.0313C1.82031 12.9766 1.80859 12.6602 1.80859 9.99219C1.80859 7.32031 1.82031 7.00391 1.86719 5.95313C1.91016 4.97656 2.07422 4.44922 2.21094 4.09766C2.39063 3.63281 2.60938 3.29688 2.95703 2.94922C3.30859 2.59766 3.64063 2.38281 4.10547 2.20313C4.45703 2.06641 4.98828 1.90234 5.96094 1.85937C7.01172 1.8125 7.32813 1.80078 10 1.80078ZM10 0C7.28516 0 6.94531 0.0117187 5.87891 0.0585938C4.81641 0.105469 4.08594 0.277344 3.45313 0.523437C2.79297 0.78125 2.23438 1.12109 1.67969 1.67969C1.12109 2.23438 0.78125 2.79297 0.523438 3.44922C0.277344 4.08594 0.105469 4.8125 0.0585938 5.875C0.0117188 6.94531 0 7.28516 0 10C0 12.7148 0.0117188 13.0547 0.0585938 14.1211C0.105469 15.1836 0.277344 15.9141 0.523438 16.5469C0.78125 17.207 1.12109 17.7656 1.67969 18.3203C2.23438 18.875 2.79297 19.2188 3.44922 19.4727C4.08594 19.7188 4.8125 19.8906 5.875 19.9375C6.94141 19.9844 7.28125 19.9961 9.99609 19.9961C12.7109 19.9961 13.0508 19.9844 14.1172 19.9375C15.1797 19.8906 15.9102 19.7188 16.543 19.4727C17.1992 19.2188 17.7578 18.875 18.3125 18.3203C18.8672 17.7656 19.2109 17.207 19.4648 16.5508C19.7109 15.9141 19.8828 15.1875 19.9297 14.125C19.9766 13.0586 19.9883 12.7188 19.9883 10.0039C19.9883 7.28906 19.9766 6.94922 19.9297 5.88281C19.8828 4.82031 19.7109 4.08984 19.4648 3.45703C19.2188 2.79297 18.8789 2.23438 18.3203 1.67969C17.7656 1.125 17.207 0.78125 16.5508 0.527344C15.9141 0.28125 15.1875 0.109375 14.125 0.0625C13.0547 0.0117188 12.7148 0 10 0Z" fill="#54504D" />
+                                            <path d="M10 4.86328C7.16406 4.86328 4.86328 7.16406 4.86328 10C4.86328 12.8359 7.16406 15.1367 10 15.1367C12.8359 15.1367 15.1367 12.8359 15.1367 10C15.1367 7.16406 12.8359 4.86328 10 4.86328ZM10 13.332C8.16016 13.332 6.66797 11.8398 6.66797 10C6.66797 8.16016 8.16016 6.66797 10 6.66797C11.8398 6.66797 13.332 8.16016 13.332 10C13.332 11.8398 11.8398 13.332 10 13.332Z" fill="#54504D" />
+                                            <path d="M16.5391 4.66016C16.5391 5.32422 16 5.85938 15.3398 5.85938C14.6758 5.85938 14.1406 5.32031 14.1406 4.66016C14.1406 3.99609 14.6797 3.46094 15.3398 3.46094C16 3.46094 16.5391 4 16.5391 4.66016Z" fill="#54504D" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_141_5104">
+                                            <rect width="20" height="20" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <p class="small">@slushat_i_slyshat</p>
+                                </a>
+                           </li>
+                           <li>
+                                <a class="footer__menu-row" href="#">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 11H6.55556M1 11C1 16.5228 5.47715 21 11 21M1 11C1 5.47715 5.47715 1 11 1M6.55556 11H15.4444M6.55556 11C6.55556 16.5228 8.5454 21 11 21M6.55556 11C6.55556 5.47715 8.5454 1 11 1M15.4444 11H21M15.4444 11C15.4444 5.47715 13.4546 1 11 1M15.4444 11C15.4444 16.5228 13.4546 21 11 21M21 11C21 5.47715 16.5228 1 11 1M21 11C21 16.5228 16.5228 21 11 21" stroke="#54504D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <p class="small">slushat-i-slyshat.com</p>
+                                </a>
+                           </li>
                         </ul>
                     </nav>
                 </div>
                 <div class="footer__middle">
-                    <div class="footer__middle-item"><div class="grid__info-circle circle"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.2437 9.22911L11.5187 14.3819L8.65625 11.8055M24.4 10.7299C24.4 19.191 17.2895 22.9844 14.275 24.2125L14.2712 24.214C13.9542 24.3431 13.7953 24.4079 13.435 24.4636C13.2069 24.4988 12.6946 24.4988 12.4664 24.4636C12.1047 24.4077 11.9442 24.3427 11.6246 24.2125C8.61016 22.9844 1.5 19.191 1.5 10.7299V5.62244C1.5 4.17954 1.5 3.45755 1.81199 2.90644C2.08643 2.42166 2.52402 2.02781 3.06263 1.78081C3.67496 1.5 4.47713 1.5 6.08028 1.5H19.8203C21.4234 1.5 22.2239 1.5 22.8362 1.78081C23.3748 2.02781 23.8139 2.42166 24.0883 2.90644C24.4 3.45701 24.4 4.17813 24.4 5.61821V10.7299Z" stroke="#235347" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="grid__info-content"><p class="small bold c1">Проверенные специалисты</p><p class="small c1">Все специалисты проходят проверку перед публикацией в каталоге.</p></div></div>
-                    <div class="footer__middle-item"><div class="grid__info-circle circle"><svg width="25" height="28" viewBox="0 0 25 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.5188 9.66667H5.60028C3.99013 9.66667 3.18445 9.66667 2.56946 9.98154C2.02849 10.2585 1.58899 10.7001 1.31336 11.2437C1 11.8617 1 12.6712 1 14.2892V22.3781C1 23.996 1 24.8045 1.31336 25.4225C1.58899 25.9661 2.02849 26.4085 2.56946 26.6854C3.18385 27 3.98859 27 5.5956 27H19.4044C21.0114 27 21.815 27 22.4294 26.6854C22.9703 26.4085 23.4113 25.9661 23.687 25.4225C24 24.8051 24 23.9977 24 22.3829V14.2844C24 12.6697 24 11.8611 23.687 11.2437C23.4113 10.7001 22.9703 10.2585 22.4294 9.98154C21.8144 9.66667 21.0104 9.66667 19.4003 9.66667H16.4803M8.5188 9.66667H16.4803M8.5188 9.66667C8.33559 9.66667 8.1875 9.51743 8.1875 9.33333V5.33333C8.1875 2.9401 10.1183 1 12.5 1C14.8817 1 16.8125 2.9401 16.8125 5.33333V9.33333C16.8125 9.51743 16.6635 9.66667 16.4803 9.66667" stroke="#235347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="grid__info-content"><p class="small bold c1">Конфиденциальность</p><p class="small c1">Мы не передаем ваши данные <br> третьим лицам.</p></div></div>
+                    <div class="footer__middle-item">
+                        <div class="grid__info-circle circle">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.2437 9.22911L11.5187 14.3819L8.65625 11.8055M24.4 10.7299C24.4 19.191 17.2895 22.9844 14.275 24.2125L14.2712 24.214C13.9542 24.3431 13.7953 24.4079 13.435 24.4636C13.2069 24.4988 12.6946 24.4988 12.4664 24.4636C12.1047 24.4077 11.9442 24.3427 11.6246 24.2125C8.61016 22.9844 1.5 19.191 1.5 10.7299V5.62244C1.5 4.17954 1.5 3.45755 1.81199 2.90644C2.08643 2.42166 2.52402 2.02781 3.06263 1.78081C3.67496 1.5 4.47713 1.5 6.08028 1.5H19.8203C21.4234 1.5 22.2239 1.5 22.8362 1.78081C23.3748 2.02781 23.8139 2.42166 24.0883 2.90644C24.4 3.45701 24.4 4.17813 24.4 5.61821V10.7299Z" stroke="#235347" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="grid__info-content">
+                            <p class="small bold c1">Проверенные специалисты</p>
+                            <p class="small c1">Все специалисты проходят проверку перед публикацией в каталоге.</p>
+                        </div>
+                    </div>
+                    <div class="footer__middle-item">
+                        <div class="grid__info-circle circle">
+                            <svg width="25" height="28" viewBox="0 0 25 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.5188 9.66667H5.60028C3.99013 9.66667 3.18445 9.66667 2.56946 9.98154C2.02849 10.2585 1.58899 10.7001 1.31336 11.2437C1 11.8617 1 12.6712 1 14.2892V22.3781C1 23.996 1 24.8045 1.31336 25.4225C1.58899 25.9661 2.02849 26.4085 2.56946 26.6854C3.18385 27 3.98859 27 5.5956 27H19.4044C21.0114 27 21.815 27 22.4294 26.6854C22.9703 26.4085 23.4113 25.9661 23.687 25.4225C24 24.8051 24 23.9977 24 22.3829V14.2844C24 12.6697 24 11.8611 23.687 11.2437C23.4113 10.7001 22.9703 10.2585 22.4294 9.98154C21.8144 9.66667 21.0104 9.66667 19.4003 9.66667H16.4803M8.5188 9.66667H16.4803M8.5188 9.66667C8.33559 9.66667 8.1875 9.51743 8.1875 9.33333V5.33333C8.1875 2.9401 10.1183 1 12.5 1C14.8817 1 16.8125 2.9401 16.8125 5.33333V9.33333C16.8125 9.51743 16.6635 9.66667 16.4803 9.66667" stroke="#235347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="grid__info-content">
+                            <p class="small bold c1">Конфиденциальность</p>
+                            <p class="small c1">Мы не передаем ваши данные <br> третьим лицам.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="footer__bottom"><p class="small c1">© 2026 «Слушать и слышать». Все права защищены.</p></div>
+        <div class="footer__bottom">
+            <p class="small c1">© 2026 «Слушать и слышать». Все права защищены.</p>
+        </div>
     </footer>
+
+
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
