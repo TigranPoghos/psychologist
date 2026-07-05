@@ -2544,6 +2544,25 @@ body {
     display: flex !important;
 }
 
+.modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 99999999999999999;
+
+    &.active {
+        display: flex;
+    }
+
+    &__close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+}
+
 
 
 @media (max-width: 1440px) {

@@ -2177,6 +2177,23 @@ body.hidden {
   display: flex !important;
 }
 
+.modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 100000000000000000;
+}
+.modal.active {
+  display: flex;
+}
+.modal__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
 @media (max-width: 1440px) {
   .header .header__logo-text {
     display: none;

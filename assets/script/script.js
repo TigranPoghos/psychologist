@@ -318,7 +318,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    
+
     const moreCards = document.querySelectorAll('[data-more-card="true"]');
     const moreButton = document.querySelector('.events-upcoming__more');
     if (moreButton && moreCards.length) {
@@ -336,6 +336,57 @@ document.addEventListener("DOMContentLoaded", function () {
     } else if (moreButton) {
         moreButton.style.display = 'none';
     }
+
+
+
+
+    const modal = document.querySelector('[data-modal="partner"]');
+    const modalContent = modal?.querySelector('.contact__form');
+    const modalClose = modal?.querySelector('.modal__close');
+    const opacite = document.querySelector('.opacite');
+    const openButtons = document.querySelectorAll('[data-modal-open="partner"]');
+
+    if (modal && modalContent && opacite && openButtons.length) {
+        const openModal = () => {
+            modal.classList.add('active');
+            opacite.classList.add('active');
+            document.body.classList.add('hidden');
+        };
+
+        const closeModal = () => {
+            modal.classList.remove('active');
+            opacite.classList.remove('active');
+            document.body.classList.remove('hidden');
+        };
+
+        openButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                openModal();
+            });
+        });
+
+        if (modalClose) {
+            modalClose.addEventListener('click', closeModal);
+        }
+
+        modal.addEventListener('click', (e) => {
+            if (!modalContent.contains(e.target)) {
+                closeModal();
+            }
+        });
+
+        opacite.addEventListener('click', closeModal);
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('active')) {
+                closeModal();
+            }
+        });
+    }
+
+
 
 
 
