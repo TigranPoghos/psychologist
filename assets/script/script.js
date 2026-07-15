@@ -18,30 +18,45 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     // Partner Swiper
-    const slider = document.querySelector('.mySwiper');
-    if (slider) {
-        const slidesCount = slider.querySelectorAll('.swiper-slide').length;
+    const partnerSection = document.querySelector('.partner');
+    if (partnerSection && typeof Swiper !== 'undefined') {
+        const slider = partnerSection.querySelector('.mySwiper');
+        const prevButton = partnerSection.querySelector('.swiper__button-prev');
+        const nextButton = partnerSection.querySelector('.swiper__button-next');
 
-        let maxSlides;
+        if (slider) {
+            const slidesCount = slider.querySelectorAll('.swiper-slide').length;
 
-        if (window.innerWidth <= 576) {
-            maxSlides = 2;
-        } else if (window.innerWidth <= 768) {
-            maxSlides = 3;
-        } else if (window.innerWidth <= 1024) {
-            maxSlides = 4;
-        } else if (window.innerWidth <= 1440) {
-            maxSlides = 5;
-        } else {
-            maxSlides = 6;
+            let maxSlides;
+
+            if (window.innerWidth <= 576) {
+                maxSlides = 2;
+            } else if (window.innerWidth <= 768) {
+                maxSlides = 3;
+            } else if (window.innerWidth <= 1024) {
+                maxSlides = 4;
+            } else if (window.innerWidth <= 1440) {
+                maxSlides = 5;
+            } else {
+                maxSlides = 6;
+            }
+
+            const slidesPerView = Math.min(slidesCount, maxSlides);
+
+            const swiperOptions = {
+                slidesPerView,
+                spaceBetween: 20,
+            };
+
+            if (prevButton && nextButton) {
+                swiperOptions.navigation = {
+                    prevEl: prevButton,
+                    nextEl: nextButton,
+                };
+            }
+
+            new Swiper(slider, swiperOptions);
         }
-
-        const slidesPerView = slidesCount >= maxSlides ? maxSlides : slidesCount;
-
-        new Swiper('.mySwiper', {
-            slidesPerView,
-            spaceBetween: 20,
-        });
     }
 
     // Admin Swiper
