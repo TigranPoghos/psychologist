@@ -188,14 +188,32 @@
     position: relative;
     min-height: 140px;
     margin: 0;
-    padding: 25px 18px 17px;
+    padding: 40px;
     border-radius: 14px;
     background: #faf7f3;
+    position: relative;
 }
 
-.group-session-page .gs-reviews blockquote p {
-    margin: 0;
-    line-height: 1.4;
+.gs-reviews-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.gs-reviews blockquote p {
+    position: relative;
+    z-index: 2;
+}
+
+.gs-reviews blockquote cite {
+    position: relative;
+    z-index: 2;
+}
+
+.gs-reviews-leaf {
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 .group-session-page .gs-reviews cite {
