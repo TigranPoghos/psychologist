@@ -107,6 +107,11 @@ button.button {
             & span {
                 color: white;
             }
+
+            & svg path {
+                fill: white;
+                stroke: white;
+            }
         }
     }
 }
@@ -492,7 +497,7 @@ body {
 
                 &-title {
                     font-size: 20px;
-                    font-weight: 600;
+                    font-weight: 500;
                 }
             }
         }
@@ -1194,9 +1199,18 @@ body {
             transition: max-height .4s ease;
         }
 
+        &-arrow {
+            transition: .4s;
+            margin-right: 10px;
+        }
+
         &.active {
-            .faq__item-answer {
+            & .faq__item-answer {
                 max-height: 500px;
+            }
+
+            & .faq__item-arrow {
+                transform: rotate(45deg);
             }
         }
 
@@ -1204,7 +1218,6 @@ body {
             background: #235347;
             height: 60px;
             width: 1px;
-            margin-right: 20px;
             margin-left: auto;
         }
     }
@@ -1407,6 +1420,8 @@ body {
 }
 
 .filter {
+    margin-bottom: 60px;
+    
     &__row {
         flex-direction: column;
         gap: 20px;
@@ -2315,6 +2330,21 @@ body {
             bottom: 35px;
             right: 0;
             width: 100%;
+        }
+
+        &-button {
+            &:hover {
+                background: #235347 !important;
+
+                & span {
+                    color: white !important;
+                }
+
+                & svg path {
+                    fill: none !important;
+                    stroke: white !important;
+                }
+            }
         }
     }
 

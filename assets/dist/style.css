@@ -100,6 +100,10 @@ button.button__white:hover {
 button.button__white:hover span {
   color: white;
 }
+button.button__white:hover svg path {
+  fill: white;
+  stroke: white;
+}
 
 a.button {
   border: 1px solid #235347;
@@ -428,7 +432,7 @@ body.hidden {
 }
 .hero__content .filter__bottom-title {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
 }
 .hero__bottom {
   display: flex;
@@ -1024,14 +1028,20 @@ body.hidden {
   overflow: hidden;
   transition: max-height 0.4s ease;
 }
+.faq__item-arrow {
+  transition: 0.4s;
+  margin-right: 10px;
+}
 .faq__item.active .faq__item-answer {
   max-height: 500px;
+}
+.faq__item.active .faq__item-arrow {
+  transform: rotate(45deg);
 }
 .faq__item-line {
   background: #235347;
   height: 60px;
   width: 1px;
-  margin-right: 20px;
   margin-left: auto;
 }
 
@@ -1217,6 +1227,9 @@ body.hidden {
     opacity: 1;
     transform: translateY(0);
   }
+}
+.filter {
+  margin-bottom: 60px;
 }
 .filter__row {
   flex-direction: column;
@@ -1986,6 +1999,16 @@ body.hidden {
   bottom: 35px;
   right: 0;
   width: 100%;
+}
+.about__hero-button:hover {
+  background: #235347 !important;
+}
+.about__hero-button:hover span {
+  color: white !important;
+}
+.about__hero-button:hover svg path {
+  fill: none !important;
+  stroke: white !important;
 }
 .about__row {
   flex-direction: column;
