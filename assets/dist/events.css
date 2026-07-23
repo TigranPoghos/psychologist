@@ -676,8 +676,29 @@ button.button__white:hover .events-arrow {
   justify-content: center;
 }
 
+.events-main button.button {
+  border: 1px solid #235347;
+  border-radius: 60px;
+  padding: 16px 28px;
+  max-width: max-content;
+  background: #235347;
+  gap: 12px;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .events-main a.button span,
 .event-detail-main a.button span {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  transition: 0.4s;
+}
+
+.events-main button.button span {
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 16px;
@@ -688,6 +709,15 @@ button.button__white:hover .events-arrow {
 .events-main a.button:hover,
 .event-detail-main a.button:hover {
   background: white;
+}
+
+.events-card:hover .events-card__button.button {
+  background: white;
+  border: 1px solid #235347;
+}
+
+.events-card:hover .events-card__button.button span {
+  color: #235347;
 }
 
 .events-main a.button:hover span,

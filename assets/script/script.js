@@ -153,7 +153,9 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
             $(document).on('click', function () {
-                closeBurger();
+                if (burgerBtn.hasClass('open')) {
+                    closeBurger();
+                }
             });
 
             $('.burger a').on('click', function () {
